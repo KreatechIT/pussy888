@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Meta Data -->
-    <title>@stack('title')</title>
+    <title>@stack('title', config('app.name'))</title>
+    <meta name="title" content="@stack('meta_title')">
     <meta name="description" content="@stack('meta_description')">
     <meta name="keywords" content="@stack('meta_keywords')">
 
 
     <!-- Favicon -->
-    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/frontend/images/logo.png') }}" type="image/x-icon">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -34,19 +35,18 @@
 
 <body>
 
-    <!-- Header Section -->
-    <x-layouts.header />
-
     @if ($slot->isEmpty())
         <p>
             Empty $slot
         </p>
     @else
-        {{ $slot }}
-    @endif
+        <div x-data="{ mobileOpen: false, gameMenu: false }" class="min-h-screen bg-black text-white">
+            <x-layouts.header />
+            {{ $slot }}
+            <x-layouts.footer />
 
-    <!-- Footer Section -->
-    <x-layouts.footer />
+        </div>
+    @endif
 
     <!-- AOS Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
