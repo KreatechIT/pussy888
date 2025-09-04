@@ -31,18 +31,18 @@
                  <!-- Logo -->
                  <div class="flex items-center gap-3">
                      <a href="{{ route('home') }}">
-                        <img src="{{ asset('assets/frontend/images/logo.png') }}" alt="Kiss918" class="h-20 w-auto">
+                         <img src="{{ asset('assets/frontend/images/logo.png') }}" alt="Kiss918" class="h-20 w-auto">
                      </a>
                  </div>
 
                  <!-- Desktop Nav -->
                  <div class="hidden md:flex items-center gap-6">
-                     <a href="{{ route('home') }}" class="hover:text-amber-300 transition">Home</a>
+                     <a href="{{ route('home') }}" class="hover:text-purple-300 transition">Home</a>
 
                      <!-- Games Dropdown (desktop) -->
                      <div x-data="{ open: false }" class="relative">
                          <button @mouseenter="open=true" @mouseleave="open=false"
-                             class="flex items-center gap-1 hover:text-amber-300 transition">
+                             class="flex items-center gap-1 hover:text-purple-300 transition">
                              Games
                              <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -58,17 +58,15 @@
                          </div>
                      </div>
 
-                     <a href="#" class="hover:text-amber-300 transition">Promotions</a>
-                     <a href="#" class="hover:text-amber-300 transition">Blog</a>
-                     <a href="#" class="hover:text-amber-300 transition">FAQ</a>
+                     <a href="#" class="hover:text-purple-300 transition">Promotions</a>
+                     <a href="#" class="hover:text-purple-300 transition">Blog</a>
+                     <a href="#" class="hover:text-purple-300 transition">FAQ</a>
                  </div>
 
                  <!-- CTA -->
                  <div class="hidden md:flex items-center gap-3">
-                     <a href="#"
-                         class="rounded-md border border-amber-400/60 px-4 py-2 text-sm hover:bg-amber-400/10">Login</a>
-                     <a href="#"
-                         class="rounded-md bg-amber-400 px-4 py-2 text-sm font-semibold text-black hover:bg-amber-300">Register</a>
+                    <x-partials.button type="outline" href="#">Login</x-partials.button>
+                    <x-partials.button href="#">Register</x-partials.button>
                  </div>
 
                  <!-- Mobile Menu Button -->
@@ -112,9 +110,9 @@
 
                  <div class="pt-2 flex items-center gap-2">
                      <a href="#"
-                         class="flex-1 rounded-md border border-amber-400/60 px-4 py-2 text-center text-sm hover:bg-amber-400/10">Login</a>
+                         class="flex-1 rounded-md border border-purple-400/60 px-4 py-2 text-center text-sm hover:bg-purple-400/10">Login</a>
                      <a href="#"
-                         class="flex-1 rounded-md bg-amber-400 px-4 py-2 text-center text-sm font-semibold text-black hover:bg-amber-300">Register</a>
+                         class="flex-1 rounded-md bg-purple-400 px-4 py-2 text-center text-sm font-semibold text-black hover:bg-purple-300">Register</a>
                  </div>
              </div>
          </div>

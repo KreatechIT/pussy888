@@ -3,8 +3,8 @@
       <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-4 gap-6">
           <div class="space-y-3">
               <div class="flex items-center gap-2">
-                  <img src="{{ asset('assets/frontend/images/logo.png') }}" class="h-7 w-auto" alt="">
-                  <div class="font-semibold">Kiss918</div>
+                  <img src="{{ asset('assets/frontend/images/logo.png') }}" class="h-20 w-auto" alt="">
+                  <div class="font-semibold">{{ config('app.name') }}</div>
               </div>
               <div class="text-sm text-white/70">Malaysia’s trusted gaming hub for slots, live casino & sports. Play
                   responsibly.</div>

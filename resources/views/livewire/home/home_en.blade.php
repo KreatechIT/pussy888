@@ -21,11 +21,14 @@
                         players.
                     </p>
                     <div class="mt-6 flex flex-wrap gap-3">
-                        <a href="#"
+                        <x-partials.button href="#">Download
+                            App</x-partials.button>
+                        <x-partials.button type="outline" href="#">Explore</x-partials.button>
+                        {{-- <a href="#"
                             class="rounded-md bg-amber-400 px-5 py-3 font-semibold text-black hover:bg-amber-300">Download
                             App</a>
                         <a href="#games" class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5">Explore
-                            Games</a>
+                            Games</a> --}}
                     </div>
                 </div>
             </div>
@@ -64,13 +67,16 @@
             </div>
             <div class="hidden gap-2 sm:flex">
                 <button @click="tab='android'"
-                    :class="tab === 'android' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="tab === 'android' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">Android</button>
                 <button @click="tab='ios'"
-                    :class="tab === 'ios' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="tab === 'ios' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">iOS</button>
                 <button @click="tab='web'"
-                    :class="tab === 'web' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="tab === 'web' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">Mobile Web</button>
             </div>
         </div>
@@ -133,11 +139,10 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <a href="#"
-                        class="rounded-md bg-amber-400 px-4 py-2 font-semibold text-black hover:bg-amber-300">Download
-                        APK</a>
-                    <a href="#" class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5">Get iOS
-                        App</a>
+                    <x-partials.button href="#">Download
+                        APK</x-partials.button>
+                    <x-partials.button type="outline" href="#">Get iOS
+                        App</x-partials.button>
                 </div>
             </div>
         </div>
@@ -176,13 +181,16 @@
             </div>
             <div class="hidden gap-2 sm:flex">
                 <button @click="cat='slots'"
-                    :class="cat === 'slots' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="cat === 'slots' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">Slots</button>
                 <button @click="cat='live'"
-                    :class="cat === 'live' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="cat === 'live' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">Live Casino</button>
                 <button @click="cat='table'"
-                    :class="cat === 'table' ? 'bg-amber-400 text-black' : 'border border-white/15 hover:bg-white/5'"
+                    :class="cat === 'table' ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' :
+                        'border border-white/15 hover:bg-white/5'"
                     class="rounded-md px-3 py-2 text-sm">Table &amp; Specialty</button>
             </div>
         </div>
@@ -224,7 +232,7 @@
                     <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
                         <template x-for="(dot, i) in items" :key="'d' + i">
                             <button @click="slide=i" class="size-2 rounded-full"
-                                :class="slide === i ? 'bg-amber-400' : 'bg-white/40'"></button>
+                                :class="slide === i ? 'bg-purple-400' : 'bg-white/40'"></button>
                         </template>
                     </div>
                 </div>
@@ -256,11 +264,8 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <a href="#"
-                        class="rounded-md bg-amber-400 px-4 py-2 font-semibold text-black hover:bg-amber-300">Play
-                        Now</a>
-                    <a href="#" class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5">View All
-                        Games</a>
+                    <x-partials.button href="#">Play Now</x-partials.button>
+                    <x-partials.button type="outline" href="#">View All Games</x-partials.button>
                 </div>
             </div>
         </div>
@@ -363,11 +368,8 @@
                     Live chat for instant help, email for detailed queries, and phone for urgent cases.
                 </p>
                 <div class="mt-4 flex flex-wrap gap-3">
-                    <a href="#"
-                        class="rounded-md bg-amber-400 px-4 py-2 font-semibold text-black hover:bg-amber-300">Live
-                        Chat</a>
-                    <a href="mailto:support@example.com"
-                        class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5">Email Support</a>
+                    <x-partials.button href="#">Live Chat</x-partials.button>
+                    <x-partials.button type="outline" href="#">Email Support</x-partials.button>
                 </div>
             </div>
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
@@ -501,12 +503,9 @@
                         secure payments, and responsive support—on desktop and mobile.
                     </div>
                     <div class="mt-4 flex flex-wrap gap-3">
-                        <a href="#"
-                            class="rounded-md bg-amber-400 px-5 py-3 font-semibold text-black hover:bg-amber-300">Download App</a>
-                        <a href="#register"
-                            class="rounded-md border border-white/20 px-5 py-3 hover:bg-white/10">Create Account</a>
-                        <a href="#games"
-                            class="rounded-md border border-white/20 px-5 py-3 hover:bg-white/10">Explore Games</a>
+                        <x-partials.button href="#">Download App</x-partials.button>
+                        <x-partials.button type="outline" href="#">Create Account</x-partials.button>
+                        <x-partials.button type="outline" href="#">Explore Games</x-partials.button>
                     </div>
                 </div>
                 <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
