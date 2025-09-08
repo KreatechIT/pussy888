@@ -2,12 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
-use App\Models\User;
 
 class AdminSeeder extends Seeder
 {
@@ -22,7 +20,7 @@ class AdminSeeder extends Seeder
         // Check if the user with email 'admin@gmail.com' already exists
         $user = User::where('email', 'admin@gmail.com')->first();
 
-        if (!$user) {
+        if (! $user) {
             // Creating the admin user if it does not already exist
             $user = new User;
             $user->name = 'Admin';
@@ -41,7 +39,7 @@ class AdminSeeder extends Seeder
             ]);
 
             // Ensure the user has the 'admin' role
-            if (!$user->hasRole('admin')) {
+            if (! $user->hasRole('admin')) {
                 $user->assignRole($admin);
             }
         }

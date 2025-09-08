@@ -4,8 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\App;
+use Symfony\Component\HttpFoundation\Response;
 
 class Language
 {
@@ -19,9 +19,10 @@ class Language
         $lang = $request->segment(1);
         $language = ['en', 'bm', 'zh'];
 
-        if (!in_array($lang, $language)) {
+        if (! in_array($lang, $language)) {
             $lang = 'en';
-            return redirect()->to('/' . $lang . $request->getRequestUri());
+
+            return redirect()->to('/'.$lang.$request->getRequestUri());
         }
 
         App::setLocale($lang);
