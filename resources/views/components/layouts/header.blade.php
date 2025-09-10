@@ -10,14 +10,32 @@
 
 <!-- Top Bar -->
 <div class="text-md bg-zinc-900">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs lg:text-lg">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs lg:text-base">
         <div class="opacity-80">Trusted Gaming • Fast Payouts • 24/7 Support</div>
         <div class="flex items-center gap-3">
-            <a class="opacity-80 hover:text-purple-300" href="{{ $urlEn }}">EN</a>
+            <a
+                class="{{ app()->getLocale() === 'en' ? 'text-pink-400 font-semibold' : '' }} opacity-80 hover:text-pink-400"
+                href="{{ $urlEn }}"
+                wire:navigate.hover
+            >
+                EN
+            </a>
             <span class="opacity-50">|</span>
-            <a class="opacity-80 hover:text-purple-300" href="{{ $urlBm }}">BM</a>
+            <a
+                class="{{ app()->getLocale() === 'bm' ? 'text-pink-400 font-semibold' : '' }} opacity-80 hover:text-pink-400"
+                href="{{ $urlBm }}"
+                wire:navigate.hover
+            >
+                BM
+            </a>
             <span class="opacity-50">|</span>
-            <a class="opacity-80 hover:text-purple-300" href="{{ $urlZh }}">中文</a>
+            <a
+                class="{{ app()->getLocale() === 'zh' ? 'text-pink-400 font-semibold' : '' }} opacity-80 hover:text-pink-400"
+                href="{{ $urlZh }}"
+                wire:navigate.hover
+            >
+                中文
+            </a>
         </div>
     </div>
 </div>
@@ -29,7 +47,7 @@
         <div class="flex h-20 items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
-                <a href="{{ route('home') }}">
+                <a href="{{ route('home') }}" wire:navigate.hover>
                     <img
                         class="h-20 w-auto"
                         src="{{ asset('assets/frontend/images/logo.png') }}"
@@ -40,51 +58,118 @@
 
             <!-- Desktop Nav -->
             <div class="hidden items-center gap-6 md:flex">
-                <a class="transition hover:text-purple-300" href="{{ route('home') }}">Home</a>
+                <a
+                    class="@if (Route::currentRouteName() === 'home') text-purple-300 @endif transition hover:text-purple-300"
+                    href="{{ route('home') }}"
+                    wire:navigate.hover
+                >Home</a>
 
-                <!-- Games Dropdown (desktop) -->
-                <div class="relative" x-data="{ open: false }">
-                    <button
-                        class="flex items-center gap-1 transition hover:text-purple-300"
-                        @mouseenter="open=true"
-                        @mouseleave="open=false"
-                    >
-                        Games
-                        <svg
-                            class="size-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
+                <!-- Games (split dropdown) -->
+                <div
+                    class="relative"
+                    x-data="{ open: false }"
+                    @keydown.escape.window="open = false"
+                    @click.outside="open = false"
+                >
+                    <div class="flex items-center">
+                        {{-- Left: direct link to Games --}}
+                        <a
+                            class="{{ request()->routeIs('game') ? 'text-purple-300' : '' }} {{ request()->routeIs('slot', 'live-casino', 'table-games', 'jackpot', 'games.*') ? 'text-purple-300' : '' }} transition hover:text-purple-300"
+                            href="{{ route('game') }}"
+                            wire:navigate.hover
                         >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="m19 9-7 7-7-7"
-                            />
-                        </svg>
-                    </button>
+                            Games
+                        </a>
+
+                        {{-- Right: caret toggle (opens dropdown) --}}
+                        <button
+                            class="ml-1 flex cursor-pointer items-center rounded-md p-1 transition hover:text-purple-300 focus:outline-none focus:ring-2 focus:ring-pink-400/40"
+                            type="button"
+                            aria-haspopup="true"
+                            aria-label="Open games menu"
+                            @click="open = !open"
+                            :aria-expanded="open.toString()"
+                        >
+                            <svg
+                                class="size-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m19 9-7 7-7-7"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    {{-- Dropdown panel --}}
                     <div
                         class="absolute left-0 mt-2 w-56 rounded-lg border border-white/10 bg-zinc-900/95 p-2 shadow-lg"
-                        @mouseenter="open=true"
-                        @mouseleave="open=false"
+                        role="menu"
+                        aria-label="Games submenu"
+                        x-cloak
                         x-show="open"
                         x-transition
                     >
-                        <a class="block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300" href="#">Slots</a>
-                        <a class="block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300" href="#">Live Casino</a>
+                        <a
+                            class="{{ request()->routeIs('slot') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300"
+                            href="{{ route('slot') }}"
+                            role="menuitem"
+                            wire:navigate.hover
+                        >Slots</a>
+
+                        <a
+                            class="{{ request()->routeIs('live-casino') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300"
+                            href="{{ route('live-casino') }}"
+                            role="menuitem"
+                            wire:navigate.hover
+                        >Live Casino</a>
+
+                        <a
+                            class="{{ request()->routeIs('table-games') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300"
+                            href="{{ route('table-games') }}"
+                            role="menuitem"
+                            wire:navigate.hover
+                        >Table Games</a>
+
+                        <a
+                            class="{{ request()->routeIs('jackpot') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10 hover:text-purple-300"
+                            href="{{ route('jackpot') }}"
+                            role="menuitem"
+                            wire:navigate.hover
+                        >Jackpots</a>
                     </div>
                 </div>
 
-                <a class="transition hover:text-purple-300" href="#">Promotions</a>
-                <a class="transition hover:text-purple-300" href="#">Blog</a>
-                <a class="transition hover:text-purple-300" href="#">FAQ</a>
+                <a
+                    class="@if (Route::currentRouteName() === 'promotions') text-purple-300 @endif transition hover:text-purple-300"
+                    href="{{ route('promotions') }}"
+                    wire:navigate.hover
+                >Promotions</a>
+                <a
+                    class="@if (Route::currentRouteName() === 'blog') text-purple-300 @endif transition hover:text-purple-300"
+                    href="{{ route('blog') }}"
+                    wire:navigate.hover
+                >Blog</a>
+                <a
+                    class="@if (Route::currentRouteName() === 'faq') text-purple-300 @endif transition hover:text-purple-300"
+                    href="{{ route('faq') }}"
+                    wire:navigate.hover
+                >FAQ</a>
             </div>
 
             <!-- CTA -->
             <div class="hidden items-center gap-3 md:flex">
-                <x-partials.button type="outline" href="#">Login</x-partials.button>
-                <x-partials.button href="#">Register</x-partials.button>
+                <x-partials.button
+                    type="outline"
+                    href="#"
+                    wire:navigate.hover
+                >Login</x-partials.button>
+                <x-partials.button href="#" wire:navigate.hover>Register</x-partials.button>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -130,39 +215,109 @@
         x-transition
     >
         <div class="space-y-2 px-4 py-3">
-            <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">Home</a>
-            <div class="rounded-md" x-data="{ open: false }">
-                <button class="flex w-full items-center justify-between rounded-md px-3 py-2 hover:bg-white/5"
-                    @click="open=!open"
-                >
-                    <span>Games</span>
-                    <svg
-                        class="size-4"
-                        :class="open && 'rotate-180'"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+            <a
+                class="@if (Route::currentRouteName() === 'home') text-purple-300 bg-pink-400/10 @endif block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                href="{{ route('home') }}"
+                wire:navigate.hover
+            >Home</a>
+            <div
+                class="rounded-md"
+                x-data="{ open: false }"
+                @click.outside="open = false"
+                @keydown.escape.window="open = false"
+            >
+
+                <div class="flex items-center justify-between">
+                    {{-- Left: direct link to Games --}}
+                    <a
+                        class="{{ request()->routeIs('game') ? 'text-purple-300' : '' }} {{ request()->routeIs('slot', 'live-casino', 'table-games', 'jackpot', 'games.*') ? 'text-purple-30 bg-pink-400/10' : '' }} block w-full rounded-md px-3 py-2 hover:bg-pink-400/10"
+                        href="{{ route('game') }}"
+                        wire:navigate.hover
                     >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="m19 9-7 7-7-7"
-                        />
-                    </svg>
-                </button>
+                        Games
+                    </a>
+
+                    {{-- Right: caret toggle --}}
+                    <button
+                        class="ml-2 flex items-center rounded-md p-2 hover:bg-pink-400/10 focus:outline-none focus:ring-2 focus:ring-pink-400/40"
+                        type="button"
+                        aria-label="Toggle games submenu"
+                        @click="open = !open"
+                        :aria-expanded="open.toString()"
+                    >
+                        <svg
+                            class="size-4 transition-transform duration-200"
+                            :class="{ 'rotate-180': open }"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 9-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                {{-- Dropdown panel --}}
                 <div
                     class="mt-1 space-y-1 pl-3"
+                    x-cloak
                     x-show="open"
                     x-transition
                 >
-                    <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">Slots</a>
-                    <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">Live Casino</a>
+                    <a
+                        class="{{ request()->routeIs('slot') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                        href="{{ route('slot') }}"
+                        wire:navigate.hover
+                    >
+                        Slots
+                    </a>
+
+                    <a
+                        class="{{ request()->routeIs('live-casino') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                        href="{{ route('live-casino') }}"
+                        wire:navigate.hover
+                    >
+                        Live Casino
+                    </a>
+
+                    <a
+                        class="{{ request()->routeIs('table-games') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                        href="{{ route('table-games') }}"
+                        wire:navigate.hover
+                    >
+                        Table Games
+                    </a>
+
+                    <a
+                        class="{{ request()->routeIs('jackpot') ? 'text-purple-300 bg-pink-400/10' : '' }} block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                        href="{{ route('jackpot') }}"
+                        wire:navigate.hover
+                    >
+                        Jackpots
+                    </a>
                 </div>
             </div>
-            <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">Promotions</a>
-            <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">Blog</a>
-            <a class="block rounded-md px-3 py-2 hover:bg-white/5" href="#">FAQ</a>
+
+            <a
+                class="@if (Route::currentRouteName() === 'promotions') text-purple-300 bg-pink-400/10 @endif block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                href="{{ route('promotions') }}"
+                wire:navigate.hover
+            >Promotions</a>
+            <a
+                class="@if (Route::currentRouteName() === 'blog') text-purple-300 bg-pink-400/10 @endif block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                href="{{ route('blog') }}"
+                wire:navigate.hover
+            >Blog</a>
+            <a
+                class="@if (Route::currentRouteName() === 'faq') text-purple-300 bg-pink-400/10 @endif block rounded-md px-3 py-2 hover:bg-pink-400/10"
+                href="{{ route('faq') }}"
+                wire:navigate.hover
+            >FAQ</a>
 
             <div class="flex items-center gap-2 pt-2">
                 <a class="flex-1 rounded-md border border-purple-400/60 px-4 py-2 text-center text-sm hover:bg-purple-400/10"

@@ -240,48 +240,75 @@
         <!-- Tabs content -->
         <div class="grid gap-6 md:grid-cols-2">
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <!-- Simple slider -->
-                <div class="relative">
-                    <template x-for="(card, idx) in items" :key="idx">
-                        <div
-                            class="relative"
-                            x-show="slide===idx"
-                            x-transition
-                        >
-                            <img
-                                class="h-full w-full object-cover"
-                                :src="card.img"
-                                :alt="card.t"
-                            >
+                <!-- Simple slider (fixed height + stacked slides) -->
+                <div class="relative overflow-hidden">
+                    <!-- Lock viewport height -->
+                    <div class="relative aspect-video">
+                        <template x-for="(card, idx) in items" :key="idx">
+                            <!-- Stack slides absolutely; fade between them -->
                             <div
-                                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                                <div class="text-lg font-semibold" x-text="card.t"></div>
-                                <div class="text-xs text-white/70" x-show="cat==='slots'">Features: Free Spins •
-                                    Multipliers • Jackpots</div>
-                                <div class="text-xs text-white/70" x-show="cat==='live'">HD Streams • Real Dealers •
-                                    Baccarat/Roulette/Blackjack</div>
-                                <div class="text-xs text-white/70" x-show="cat==='table'">Poker • Sic Bo • And more
+                                class="absolute inset-0 transition-all duration-500"
+                                x-cloak
+                                x-show="slide === idx"
+                                x-transition:enter="transform opacity-0 translate-x-full"
+                                x-transition:enter-start="opacity-0"
+                                x-transition:enter-end="opacity-100 translate-x-0"
+                                x-transition:leave="transform opacity-0 -translate-x-full"
+                                x-transition:leave-start="opacity-100 translate-x-0"
+                                x-transition:leave-end="opacity-0 -translate-x-full"
+                            >
+                                <img
+                                    class="h-full w-full object-cover"
+                                    :src="card.img"
+                                    :alt="card.t"
+                                    loading="eager"
+                                    fetchpriority="high"
+                                >
+                                <div
+                                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <div class="text-lg font-semibold" x-text="card.t"></div>
+
+                                    <!-- Slide meta per category -->
+                                    <div
+                                        class="text-xs text-white/70"
+                                        x-cloak
+                                        x-show="cat==='slots'"
+                                    >
+                                        Features: Free Spins • Multipliers • Jackpots
+                                    </div>
+                                    <div
+                                        class="text-xs text-white/70"
+                                        x-cloak
+                                        x-show="cat==='live'"
+                                    >
+                                        HD Streams • Real Dealers • Baccarat/Roulette/Blackjack
+                                    </div>
+                                    <div
+                                        class="text-xs text-white/70"
+                                        x-cloak
+                                        x-show="cat==='table'"
+                                    >
+                                        Poker • Sic Bo • And more
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </template>
+                        </template>
+                    </div>
 
                     <!-- Controls -->
-                    <div class="absolute inset-x-0 top-1/2 flex -translate-y-1/2 items-center justify-between px-2">
-                        <button
-                            class="rounded-md bg-black/50 p-2 ring-1 ring-white/10 hover:bg-black/70"
-                            aria-label="Prev"
-                            @click="slide = (slide - 1 + items.length) % items.length"
-                        >
-                            ‹
-                        </button>
-                        <button
-                            class="rounded-md bg-black/50 p-2 ring-1 ring-white/10 hover:bg-black/70"
-                            aria-label="Next"
-                            @click="slide = (slide + 1) % items.length"
-                        >
-                            ›
-                        </button>
+                    <div class="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 px-2">
+                        <div class="pointer-events-auto flex items-center justify-between">
+                            <button
+                                class="cursor-pointer rounded-md bg-black/50 p-2 ring-1 ring-white/10 hover:bg-black/70"
+                                aria-label="Prev"
+                                @click="slide = (slide - 1 + items.length) % items.length"
+                            >‹</button>
+                            <button
+                                class="cursor-pointer rounded-md bg-black/50 p-2 ring-1 ring-white/10 hover:bg-black/70"
+                                aria-label="Next"
+                                @click="slide = (slide + 1) % items.length"
+                            >›</button>
+                        </div>
                     </div>
 
                     <!-- Dots -->
@@ -289,7 +316,7 @@
                         <template x-for="(dot, i) in items" :key="'d' + i">
                             <button
                                 class="size-2 rounded-full"
-                                @click="slide=i"
+                                @click="slide = i"
                                 :class="slide === i ? 'bg-purple-400' : 'bg-white/40'"
                             ></button>
                         </template>
@@ -300,6 +327,7 @@
             <div class="space-y-4">
                 <div
                     class="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                    x-cloak
                     x-show="cat==='slots'"
                     x-transition
                 >
@@ -309,8 +337,10 @@
                         Try favorites like <em>Dragon Treasure</em>, <em>Golden Fist</em>, and <em>Safari Life</em>.
                     </p>
                 </div>
+
                 <div
                     class="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                    x-cloak
                     x-show="cat==='live'"
                     x-transition
                 >
@@ -320,8 +350,10 @@
                         dealers.
                     </p>
                 </div>
+
                 <div
                     class="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                    x-cloak
                     x-show="cat==='table'"
                     x-transition
                 >
@@ -462,171 +494,43 @@
         </div>
     </div>
 
-    <div
-        class="mx-auto max-w-7xl px-4 py-10"
-        id="faqs"
-        x-data="{ open: 0 }"
-    >
-
-        <div class="mb-6">
-            <div class="text-2xl font-bold">Frequently Asked Questions (FAQs)</div>
-            <div class="text-sm text-white/70">Quick answers for a smooth start on Pussy888 Malaysia.</div>
-        </div>
-
-        <div class="space-y-3">
-
-            <!-- Q1 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===1 ? 0 : 1"
-                    >
-                        <div class="font-semibold">How do I get the app safely?</div>
-                        <span class="transition" :class="open === 1 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===1"
-                    x-transition
-                >
-                    Get the app only from the official website or verified sources. For Android, download the APK
-                    and enable
-                    “Install from unknown sources.” For iOS, follow the on-screen steps to install and trust the app
-                    profile.
-                </div>
-            </div>
-
-            <!-- Q2 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===2 ? 0 : 2"
-                    >
-                        <div class="font-semibold">Is the platform compatible with my device?</div>
-                        <span class="transition" :class="open === 2 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===2"
-                    x-transition
-                >
-                    Yes. It supports Android and iOS, and you can also play via mobile browsers without installing
-                    anything.
-                </div>
-            </div>
-
-            <!-- Q3 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===3 ? 0 : 3"
-                    >
-                        <div class="font-semibold">How long do withdrawals take?</div>
-                        <span class="transition" :class="open === 3 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===3"
-                    x-transition
-                >
-                    Typically within 24 hours after verification, depending on your chosen payment method.
-                </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===4 ? 0 : 4"
-                    >
-                        <div class="font-semibold">What bonuses are offered?</div>
-                        <span class="transition" :class="open === 4 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===4"
-                    x-transition
-                >
-                    Welcome bonuses, daily/weekly promos, and a VIP program with exclusive rewards. Always check
-                    wagering terms.
-                </div>
-            </div>
-
-            <!-- Q5 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===5 ? 0 : 5"
-                    >
-                        <div class="font-semibold">Is the platform fair and safe?</div>
-                        <span class="transition" :class="open === 5 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===5"
-                    x-transition
-                >
-                    Yes. It uses certified RNG for fair outcomes and SSL encryption for data security.
-                </div>
-            </div>
-
-            <!-- Q6 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===6 ? 0 : 6"
-                    >
-                        <div class="font-semibold">What if I forget my login details?</div>
-                        <span class="transition" :class="open === 6 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===6"
-                    x-transition
-                >
-                    Use the <em>Forgot Password</em> option on the login page to reset your credentials securely.
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    @php
+        $faqs = [
+            [
+                'q' => 'How do I get the app safely?',
+                'a' =>
+                    'Get the app only from the official website or verified sources. For Android, download the APK and enable “Install from unknown sources.” For iOS, follow the on-screen steps to install and trust the app profile.',
+            ],
+            [
+                'q' => 'Is the platform compatible with my device?',
+                'a' =>
+                    'Yes. It supports Android and iOS, and you can also play via mobile browsers without installing anything.',
+            ],
+            [
+                'q' => 'How long do withdrawals take?',
+                'a' => 'Typically within 24 hours after verification, depending on your chosen payment method.',
+            ],
+            [
+                'q' => 'What bonuses are offered?',
+                'a' =>
+                    'Welcome bonuses, daily/weekly promos, and a VIP program with exclusive rewards. Always check wagering terms.',
+            ],
+            [
+                'q' => 'Is the platform fair and safe?',
+                'a' => 'Yes. It uses certified RNG for fair outcomes and SSL encryption for data security.',
+            ],
+            [
+                'q' => 'What if I forget my login details?',
+                'a' => 'Use the Forgot Password option on the login page to reset your credentials securely.',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="Frequently Asked Questions (FAQs)"
+        subtitle="Quick answers for a smooth start on Pussy888 Malaysia."
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <div class="text-white" id="cta">
         <div class="mx-auto max-w-7xl px-4 py-12">

@@ -1,12 +1,23 @@
 <?php
 
 use App\Livewire\AboutLivewire;
+use App\Livewire\BlogLivewire;
+use App\Livewire\BlogViewLivewire;
+use App\Livewire\ContactLivewire;
 use App\Livewire\FaqLivewire;
 use App\Livewire\GameLivewire;
 use App\Livewire\HomeLivewire;
+use App\Livewire\HowToDownloadLivewire;
+use App\Livewire\HowToGuideLivewire;
+use App\Livewire\HowToWinLivewire;
+use App\Livewire\JackpotLivewire;
 use App\Livewire\LiveCasinoLivewire;
+use App\Livewire\PaymentLivewire;
 use App\Livewire\PrivacyLivewire;
+use App\Livewire\PromotionLivewire;
+use App\Livewire\ResponsibleGamingLivewire;
 use App\Livewire\SlotLivewire;
+use App\Livewire\TableGameLivewire;
 use App\Livewire\TermLivewire;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -23,12 +34,19 @@ Route::middleware([\App\Http\Middleware\Language::class])
         Route::get('/terms-and-conditions', TermLivewire::class)->name('terms-and-conditions');
         Route::get('/privacy-policy', PrivacyLivewire::class)->name('privacy-policy');
         Route::get('/faq', FaqLivewire::class)->name('faq');
+        Route::get('/responsible-gaming', ResponsibleGamingLivewire::class)->name('responsible-gaming');
+        Route::get('/contact-us', ContactLivewire::class)->name('contact-us');
+        Route::get('/promotions', PromotionLivewire::class)->name('promotions');
+        Route::get('/payments', PaymentLivewire::class)->name('payments');
         Route::prefix('games')->group(function () {
             Route::get('/', GameLivewire::class)->name('game');
             Route::get('/slots', SlotLivewire::class)->name('slot');
             Route::get('/live-casino', LiveCasinoLivewire::class)->name('live-casino');
+            Route::get('/table-games', TableGameLivewire::class)->name('table-games');
+            Route::get('/jackpot', JackpotLivewire::class)->name('jackpot');
         });
-
+        Route::get('/blog', BlogLivewire::class)->name('blog');
+        Route::get('/blog-view', BlogViewLivewire::class)->name('blog-view');
         Route::get('/foo', function () {
             Artisan::call('storage:link');
         });

@@ -1,41 +1,91 @@
 <!-- Footer -->
 <div class="border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-4 gap-6">
+    <div class="mx-auto grid max-w-7xl gap-6 px-4 py-10 md:grid-cols-4">
         <div class="space-y-3">
             <div class="flex items-center gap-2">
-                <img src="{{ asset('assets/frontend/images/logo.png') }}" class="h-20 w-auto" alt="">
+                <a href="{{ route('home') }}" wire:navigate.hover><img
+                        class="h-20 w-auto"
+                        src="{{ asset('assets/frontend/images/logo.png') }}"
+                        alt=""
+                    ></a>
                 <div class="font-semibold">{{ config('app.name') }}</div>
             </div>
             <div class="text-sm text-white/70">Malaysia’s trusted gaming hub for slots, live casino & sports. Play
                 responsibly.</div>
         </div>
         <div>
-            <div class="font-semibold mb-3">Explore</div>
+            <div class="mb-3 font-semibold">Explore</div>
             <div class="space-y-2 text-sm">
-                <a href="#" class="block hover:text-purple-300">About Us</a>
-                <a href="#" class="block hover:text-purple-300">Promotions</a>
-                <a href="#" class="block hover:text-purple-300">Blog</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('about-us') }}"
+                    wire:navigate.hover
+                >About Us</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('promotions') }}"
+                    wire:navigate.hover
+                >Promotions</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('blog') }}"
+                    wire:navigate.hover
+                >Blog</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('faq') }}"
+                    wire:navigate.hover
+                >FAQ</a>
             </div>
         </div>
         <div>
-            <div class="font-semibold mb-3">Games</div>
+            <div class="mb-3 font-semibold">Games</div>
             <div class="space-y-2 text-sm">
-                <a href="#" class="block hover:text-purple-300">Slots</a>
-                <a href="#" class="block hover:text-purple-300">Live Casino</a>
-                <a href="#" class="block hover:text-purple-300">FAQ</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('slot') }}"
+                    wire:navigate.hover
+                >Slots</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('live-casino') }}"
+                    wire:navigate.hover
+                >Live Casino</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('live-casino') }}"
+                    wire:navigate.hover
+                >Table Games</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('live-casino') }}"
+                    wire:navigate.hover
+                >Jackpots</a>
             </div>
         </div>
         <div>
-            <div class="font-semibold mb-3">Legal</div>
+            <div class="mb-3 font-semibold">Legal</div>
             <div class="space-y-2 text-sm">
-                <a href="#" class="block hover:text-purple-300">Terms & Conditions</a>
-                <a href="#" class="block hover:text-purple-300">Privacy Policy</a>
-                <a href="#" class="block hover:text-purple-300">Responsible Gaming</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('terms-and-conditions') }}"
+                    wire:navigate.hover
+                >Terms & Conditions</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('privacy-policy') }}"
+                    wire:navigate.hover
+                >Privacy Policy</a>
+                <a
+                    class="block hover:text-purple-300"
+                    href="{{ route('responsible-gaming') }}"
+                    wire:navigate.hover
+                >Responsible Gaming</a>
             </div>
         </div>
     </div>
     <div class="border-t border-white/10">
-        <div class="mx-auto max-w-7xl px-4 py-4 text-xs text-white/60 flex items-center justify-between">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 text-xs text-white/60">
             <div>© {{ now()->format('Y') }} Kiss918. All rights reserved.</div>
         </div>
     </div>

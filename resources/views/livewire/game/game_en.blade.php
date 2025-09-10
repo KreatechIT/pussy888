@@ -1,3 +1,7 @@
+@push('title')
+    Games
+@endpush
+
 <div class="bg-black text-white">
     <!-- Page Header -->
     <x-partials.heading title="Games" subtitle="Pussy888 • Trusted Online Casino • Malaysia" />
@@ -57,7 +61,7 @@
                 </div>
                 <div class="mt-4">
                     <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="#slot-games">Explore →
+                        href="{{ route('slot', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -66,7 +70,7 @@
                 <div class="mt-1 text-sm text-white/70">HD streams & pro dealers: Baccarat, Roulette, Blackjack.</div>
                 <div class="mt-4">
                     <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="#live-casino">Explore →
+                        href="{{ route('live-casino', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -75,7 +79,7 @@
                 <div class="mt-1 text-sm text-white/70">Strategy classics with smooth controls & fair RNG.</div>
                 <div class="mt-4">
                     <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="#table-games">Explore →
+                        href="{{ route('table-games', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -286,5 +290,4 @@
         Whether you're in it for fun or fortune, Pussy888 delivers unmatched quality and variety in every
         spin, hand, and round.
     </x-partials.download>
-
 </div>

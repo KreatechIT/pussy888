@@ -1,3 +1,7 @@
+@push('title')
+    Slots
+@endpush
+
 <div x-data="{
         openFilter:false,
         selectedFilter:'All',

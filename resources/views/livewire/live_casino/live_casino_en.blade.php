@@ -1,3 +1,7 @@
+@push('title')
+
+@endpush
+
 <div class="bg-black text-white" x-data="{
     openFilter: false,
     selectedFilter: 'All',
