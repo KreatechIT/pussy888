@@ -30,7 +30,7 @@ class CategoryForm
                             ->required(),
                         TextInput::make('slug')
                             ->required(),
-                    ])->columns(2)
+                    ])->columns(2),
                 ])->columnSpanFull(),
             ]);
     }

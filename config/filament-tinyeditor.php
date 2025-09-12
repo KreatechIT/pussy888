@@ -24,7 +24,7 @@ return [
         'ui' => 'oxide',
 
         // dark, default, document, tinymce-5, tinymce-5-dark, writer
-        'content' => 'default'
+        'content' => 'default',
     ],
 
     'profiles' => [
@@ -32,7 +32,7 @@ return [
             'plugins' => 'accordion autoresize codesample directionality advlist link image lists preview pagebreak searchreplace wordcount code fullscreen insertdatetime media table emoticons',
             'toolbar' => 'undo redo removeformat bold italic underline image link | alignjustify alignleft aligncenter alignright | fontsizeinput font_size_formats styles | numlist bullist outdent indent | forecolor backcolor fullscreen| blockquote table toc hr | media codesample emoticons | wordcount',
             'upload_directory' => null,
-            //| fontfamily fontsize fontsizeinput font_size_formats styles |
+            // | fontfamily fontsize fontsizeinput font_size_formats styles |
             'custom_configs' => [
                 // shows "Rel" dropdown inside Insert/Edit Link
                 'link_rel_list' => [
@@ -94,6 +94,6 @@ return [
         'toolbar' => [
             // 'fontsize' => '10px 12px 13px 14px 16px 18px 20px',
             // 'fontfamily' => 'Tahoma=tahoma,arial,helvetica,sans-serif;',
-        ]
-    ]
+        ],
+    ],
 ];

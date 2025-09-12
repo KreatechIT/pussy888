@@ -2,7 +2,7 @@
 
 use App\Livewire\AboutLivewire;
 use App\Livewire\BlogLivewire;
-use App\Livewire\BlogViewLivewire;
+use App\Livewire\BlogPreviewLivewire;
 use App\Livewire\ContactLivewire;
 use App\Livewire\DownloadLivewire;
 use App\Livewire\FaqLivewire;
@@ -50,29 +50,29 @@ Route::middleware([\App\Http\Middleware\Language::class])
             Route::get('/jackpot', JackpotLivewire::class)->name('jackpot');
         });
         Route::get('/blog', BlogLivewire::class)->name('blog');
-        Route::get('/blog-view', BlogViewLivewire::class)->name('blog-view');
+        Route::get('/blog/{slug}', BlogPreviewLivewire::class)->name('blog.show');
         Route::get('/foo', function () {
             Artisan::call('storage:link');
         });
     });
-    Route::get('/generate-sitemap', function () {
-        Artisan::call('app:generate-sitemap');
-    });
+Route::get('/generate-sitemap', function () {
+    Artisan::call('app:generate-sitemap');
+});
 
-    Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
-        $path = public_path('sitemap.xml');
+Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
+    $path = public_path('sitemap.xml');
 
-        if (! file_exists($path)) {
-            // First request will generate it.
-            $builder->writeToPublic();
-        }
+    if (! file_exists($path)) {
+        // First request will generate it.
+        $builder->writeToPublic();
+    }
 
-        return response()->file($path, [
-            'Content-Type' => 'application/xml',
-            // Optional cache headers:
-            'Cache-Control' => 'public, max-age=3600',
-        ]);
-    })->name('sitemap');
+    return response()->file($path, [
+        'Content-Type' => 'application/xml',
+        // Optional cache headers:
+        'Cache-Control' => 'public, max-age=3600',
+    ]);
+})->name('sitemap');
 
 // Catch-all redirect for routes without a valid language prefix
 Route::get('{path}', function ($path) {

@@ -18,11 +18,11 @@ class ListBlogs extends ListRecords
         return [
             Action::make('Generate Sitemap')
                 ->label('Generate Sitemap')
-                    ->icon('heroicon-o-arrow-path')
-                    ->action(function () {
-                        app(SiteMapBuilder::class)->siteMapBuilder();
-                        Notification::make()->title('Sitemap Generated!')->success()->send();
-                    }),
+                ->icon('heroicon-o-arrow-path')
+                ->action(function () {
+                    app(SiteMapBuilder::class)->siteMapBuilder();
+                    Notification::make()->title('Sitemap Generated!')->success()->send();
+                }),
             CreateAction::make(),
         ];
     }

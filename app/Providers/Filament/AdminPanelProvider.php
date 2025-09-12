@@ -57,6 +57,7 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('heroicon-o-arrow-left')
                     ->url('/en', shouldOpenInNewTab: true),
             ])
+            ->resourceCreatePageRedirect('index', ['_ts' => now()->timestamp])
             ->resourceEditPageRedirect('index', ['_ts' => now()->timestamp])
             ->globalSearch(false)
             ->spa(hasPrefetching: true);

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('author');
             $table->string('image')->nullable();
             $table->string('alt');
-            $table->longText('content');
+            $table->longText('content')->nullable();
             $table->longText('meta_title');
             $table->longText('meta_description');
             $table->boolean('is_featured');

@@ -5,9 +5,7 @@ namespace App\Models;
 use App\Services\SiteMapBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
@@ -42,6 +40,11 @@ class Blog extends Model implements HasMedia
         ];
     }
 
+    public function getImageUrlAttribute()
+    {
+        return $this->getFirstMediaUrl('posts');
+    }
+
     protected static function booted(): void
     {
         $regenerate = function () {
@@ -69,5 +72,4 @@ class Blog extends Model implements HasMedia
     {
         $query->where('status', 1);
     }
-
 }

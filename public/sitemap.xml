@@ -90,4 +90,22 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
             </url>
+    <url>
+    <loc>http://127.0.0.1:8000/blog/Enim esse nihil offi</loc>
+    <lastmod>2025-09-12T10:45:54+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/blog/Iure optio et eaque</loc>
+    <lastmod>2025-09-12T09:52:44+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/blog/Suscipit voluptate t</loc>
+    <lastmod>2025-09-12T10:02:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
 </urlset>

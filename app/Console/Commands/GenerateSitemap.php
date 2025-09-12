@@ -2,14 +2,15 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Blog;
 use Illuminate\Console\Command;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
-use App\Models\Blog;
 
 class GenerateSitemap extends Command
 {
     protected $signature = 'app:generate-sitemap';
+
     protected $description = 'Generate public/sitemap.xml with static pages and blog posts (no lang prefix)';
 
     public function handle(): int
@@ -44,7 +45,7 @@ class GenerateSitemap extends Command
         foreach ($pages as $url) {
             $sitemap->add(
                 Url::create($url)
-                    ->setPriority($url === $base . '/' ? 1.0 : 0.8)
+                    ->setPriority($url === $base.'/' ? 1.0 : 0.8)
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
             );
         }
@@ -58,7 +59,7 @@ class GenerateSitemap extends Command
             ->chunk(200, function ($blogs) use ($sitemap, $base) {
                 foreach ($blogs as $blog) {
                     $sitemap->add(
-                        Url::create($base . '/blog/' . $blog->slug)
+                        Url::create($base.'/blog/'.$blog->slug)
                             ->setLastModificationDate($blog->updated_at ?? $blog->created_at)
                             ->setPriority(0.8)
                             ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
