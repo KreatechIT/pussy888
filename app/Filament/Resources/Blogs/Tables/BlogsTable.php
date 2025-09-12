@@ -8,7 +8,7 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Storage;
@@ -19,6 +19,8 @@ class BlogsTable
     {
         return $table
             ->columns([
+                SpatieMediaLibraryImageColumn::make('image')
+                    ->collection('posts'),
                 TextColumn::make('title')
                     ->searchable(),
                 TextColumn::make('slug')
@@ -27,7 +29,6 @@ class BlogsTable
                     ->searchable(),
                 TextColumn::make('author')
                     ->searchable(),
-                ImageColumn::make('image'),
                 TextColumn::make('alt')
                     ->searchable(),
                 IconColumn::make('is_featured')

@@ -399,50 +399,28 @@
     </div>
 
     <!-- 7. Safety & Fairness (Accordion) -->
-    <div class="mx-auto max-w-7xl px-4 py-10" x-data="{ a1: true, a2: false, a3: false }">
-        <div class="mb-6 text-2xl font-bold">安全与公平</div>
-        <div class="space-y-3">
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a1=!a1">
-                    <span class="text-left font-semibold">加密与账户防护</span>
-                    <span class="transition" :class="a1 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a1"
-                    x-transition
-                >
-                    行业标准的 SSL、强密码与可选 2FA，帮助保护你的账户与数据。
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a2=!a2">
-                    <span class="text-left font-semibold">RNG 认证与审计</span>
-                    <span class="transition" :class="a2 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a2"
-                    x-transition
-                >
-                    RNG 认证的游戏确保无偏结果；第三方审计进一步巩固公平性。
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a3=!a3">
-                    <span class="text-left font-semibold">责任博彩</span>
-                    <span class="transition" :class="a3 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a3"
-                    x-transition
-                >
-                    设定限额、适时休息，并获取支持资源，保持健康的游戏习惯。
-                </div>
-            </div>
-        </div>
-    </div>
+    @php
+        $faqs = [
+            [
+                'q' => '加密与账户保护',
+                'a' => '行业标准的 SSL、强密码和可选的双重验证 (2FA) 有助于保护您的账户和数据。',
+            ],
+            [
+                'q' => 'RNG 认证与审计',
+                'a' => '通过 RNG 认证的游戏确保公平结果；第三方审计进一步加强公正性。',
+            ],
+            [
+                'q' => '责任博彩',
+                'a' => '设置限制，适时休息，并使用支持资源以保持健康的游戏习惯。',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="安全与公平"
+        subtitle="快速解答，助您在 Pussy888 马来西亚顺利开始。"
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <!-- 8. Tips for New Players -->
     <div class="mx-auto max-w-7xl px-4 py-10">
@@ -481,164 +459,42 @@
         </div>
     </div>
 
-    <div
-        class="mx-auto max-w-7xl px-4 py-10"
-        id="faqs"
-        x-data="{ open: 0 }"
-    >
-
-        <div class="mb-6">
-            <div class="text-2xl font-bold">常见问题（FAQs）</div>
-            <div class="text-sm text-white/70">快速解答，助你在 Pussy888 马来西亚顺畅起步。</div>
-        </div>
-
-        <div class="space-y-3">
-
-            <!-- Q1 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===1 ? 0 : 1"
-                    >
-                        <div class="font-semibold">我如何安全地获取应用？</div>
-                        <span class="transition" :class="open === 1 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===1"
-                    x-transition
-                >
-                    仅从官方网站或已验证来源获取应用。Android 请下载 APK 并启用“允许来自未知来源的安装”。iOS 请按屏幕步骤安装并信任应用配置档。
-                </div>
-            </div>
-
-            <!-- Q2 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===2 ? 0 : 2"
-                    >
-                        <div class="font-semibold">平台是否兼容我的设备？</div>
-                        <span class="transition" :class="open === 2 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===2"
-                    x-transition
-                >
-                    是的。支持 Android 与 iOS，你也可以直接通过移动端浏览器游玩，无需安装任何内容。
-                </div>
-            </div>
-
-            <!-- Q3 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===3 ? 0 : 3"
-                    >
-                        <div class="font-semibold">提款需要多久？</div>
-                        <span class="transition" :class="open === 3 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===3"
-                    x-transition
-                >
-                    通常在验证通过后的 24 小时内完成，具体取决于你所选择的支付方式。
-                </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="text左 flex w-full items-center justify-between" @click="open = open===4 ? 0 : 4">
-                        <div class="font-semibold">提供哪些红利？</div>
-                        <span class="transition" :class="open === 4 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===4"
-                    x-transition
-                >
-                    欢迎红利、每日/每周活动以及带有专属奖励的 VIP 计划。务必查看投注条款。
-                </div>
-            </div>
-
-            <!-- Q5 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===5 ? 0 : 5"
-                    >
-                        <div class="font-semibold">平台是否公平且安全？</div>
-                        <span class="transition" :class="open === 5 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===5"
-                    x-transition
-                >
-                    是的。我们使用通过认证的 RNG 以确保公平结果，并采用 SSL 加密保护数据安全。
-                </div>
-            </div>
-
-            <!-- Q6 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===6 ? 0 : 6"
-                    >
-                        <div class="font-semibold">如果我忘记了登录信息怎么办？</div>
-                        <span class="transition" :class="open === 6 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===6"
-                    x-transition
-                >
-                    在登录页使用 <em>忘记密码</em> 功能，以安全方式重置你的凭证。
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    <!-- 10. FAQs -->
+    @php
+        $faqs = [
+            [
+                'q' => '我如何安全获取应用程序？',
+                'a' =>
+                    '仅从官方网站或已验证的来源获取应用程序。Android 用户请下载 APK 并启用“允许安装未知来源应用”；iOS 用户请按照屏幕提示安装并信任应用配置。',
+            ],
+            [
+                'q' => '平台是否兼容我的设备？',
+                'a' => '是的。它支持 Android 和 iOS，您也可以通过移动浏览器直接玩，无需安装。',
+            ],
+            [
+                'q' => '提款需要多久？',
+                'a' => '通常在验证后 24 小时内完成，具体取决于您选择的支付方式。',
+            ],
+            [
+                'q' => '有哪些奖金优惠？',
+                'a' => '包括欢迎奖金、每日/每周促销，以及专属奖励的 VIP 计划。请务必查看投注条款。',
+            ],
+            [
+                'q' => '平台是否公平和安全？',
+                'a' => '是的。它使用经认证的 RNG 确保公平结果，并采用 SSL 加密保障数据安全。',
+            ],
+            [
+                'q' => '如果我忘记登录信息怎么办？',
+                'a' => '请在登录页面使用“忘记密码”选项，安全地重置您的凭证。',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="常见问题 (FAQ)"
+        subtitle="快速解答，助您在 Pussy888 马来西亚顺利开始。"
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <div class="text-white" id="cta">
         <div class="mx-auto max-w-7xl px-4 py-12">

@@ -6,7 +6,7 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages\Dashboard;
+use Filament\Navigation\NavigationItem;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
@@ -52,6 +52,12 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
+            ->navigationItems([
+                NavigationItem::make('Back To Home')
+                    ->icon('heroicon-o-arrow-left')
+                    ->url('/en', shouldOpenInNewTab: true),
+            ])
+            ->resourceEditPageRedirect('index', ['_ts' => now()->timestamp])
             ->globalSearch(false)
             ->spa(hasPrefetching: true);
     }

@@ -2,7 +2,7 @@
 
 namespace App\Filament\Resources\Blogs\Schemas;
 
-use Filament\Forms\Components\RichEditor;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
@@ -48,12 +48,13 @@ class BlogForm
                         ->label('Blog Image')
                         ->image()
                         ->collection('posts')
+                        ->disk('public')
                         ->deleteUploadedFileUsing(function ($file) {
                             Storage::disk('public')->delete($file);
                         }),
                     TextInput::make('alt')
                         ->required(),
-                    RichEditor::make('content')
+                    TinyEditor::make('content')
                         ->required()
                         ->extraAttributes(['class' => 'prose max-w-none'])
                         ->columnSpanFull(),

@@ -412,50 +412,30 @@
     </div>
 
     <!-- 7. Safety & Fairness (Accordion) -->
-    <div class="mx-auto max-w-7xl px-4 py-10" x-data="{ a1: true, a2: false, a3: false }">
-        <div class="mb-6 text-2xl font-bold">Safety &amp; Fairness</div>
-        <div class="space-y-3">
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a1=!a1">
-                    <span class="text-left font-semibold">Encryption &amp; Account Protection</span>
-                    <span class="transition" :class="a1 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a1"
-                    x-transition
-                >
-                    Industry-standard SSL, strong passwords, and optional 2FA help secure your account and data.
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a2=!a2">
-                    <span class="text-left font-semibold">RNG Certification &amp; Audits</span>
-                    <span class="transition" :class="a2 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a2"
-                    x-transition
-                >
-                    RNG-certified games ensure unbiased outcomes; third-party audits reinforce fairness.
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a3=!a3">
-                    <span class="text-left font-semibold">Responsible Gaming</span>
-                    <span class="transition" :class="a3 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a3"
-                    x-transition
-                >
-                    Set limits, take breaks, and access support resources to keep gaming healthy.
-                </div>
-            </div>
-        </div>
-    </div>
+    @php
+        $faqs = [
+            [
+                'q' => 'Encryption & Account Protection',
+                'a' =>
+                    'Industry-standard SSL, strong passwords, and optional 2FA help secure your account and data.',
+            ],
+            [
+                'q' => 'RNG Certification & Audits',
+                'a' =>
+                    'RNG-certified games ensure unbiased outcomes; third-party audits reinforce fairness.',
+            ],
+            [
+                'q' => 'Responsible Gaming',
+                'a' => 'Set limits, take breaks, and access support resources to keep gaming healthy.',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="Safety & Fairness"
+        subtitle="Quick answers for a smooth start on Pussy888 Malaysia."
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <!-- 8. Tips for New Players -->
     <div class="mx-auto max-w-7xl px-4 py-10">
@@ -494,6 +474,7 @@
         </div>
     </div>
 
+    <!-- 10. FAQs -->
     @php
         $faqs = [
             [

@@ -415,51 +415,30 @@
     </div>
 
     <!-- 7. Safety & Fairness (Accordion) -->
-    <div class="mx-auto max-w-7xl px-4 py-10" x-data="{ a1: true, a2: false, a3: false }">
-        <div class="mb-6 text-2xl font-bold">Keselamatan &amp; Keadilan</div>
-        <div class="space-y-3">
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a1=!a1">
-                    <span class="text-left font-semibold">Penyulitan &amp; Perlindungan Akaun</span>
-                    <span class="transition" :class="a1 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a1"
-                    x-transition
-                >
-                    SSL piawaian industri, kata laluan kukuh, dan 2FA pilihan membantu melindungi akaun serta data anda.
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a2=!a2">
-                    <span class="text-left font-semibold">Pensijilan RNG &amp; Audit</span>
-                    <span class="transition" :class="a2 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a2"
-                    x-transition
-                >
-                    Permainan diperakui RNG memastikan keputusan tidak berat sebelah; audit pihak ketiga mengukuhkan
-                    keadilan.
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl border border-white/10">
-                <button class="flex w-full items-center justify-between bg-white/[0.03] px-4 py-3" @click="a3=!a3">
-                    <span class="text-left font-semibold">Perjudian Bertanggungjawab</span>
-                    <span class="transition" :class="a3 ? 'rotate-180' : ''">⌄</span>
-                </button>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="a3"
-                    x-transition
-                >
-                    Tetapkan had, ambil rehat, dan akses sumber sokongan untuk memastikan permainan kekal sihat.
-                </div>
-            </div>
-        </div>
-    </div>
+    @php
+        $faqs = [
+            [
+                'q' => 'Penyulitan & Perlindungan Akaun',
+                'a' =>
+                    'SSL piawaian industri, kata laluan yang kukuh, dan pilihan 2FA membantu melindungi akaun serta data anda.',
+            ],
+            [
+                'q' => 'Pensijilan RNG & Audit',
+                'a' =>
+                    'Permainan diperakui RNG memastikan keputusan yang adil; audit pihak ketiga mengukuhkan ketelusan.',
+            ],
+            [
+                'q' => 'Permainan Bertanggungjawab',
+                'a' => 'Tetapkan had, ambil rehat, dan akses sumber sokongan untuk memastikan permainan kekal sihat.',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="Keselamatan & Keadilan"
+        subtitle="Jawapan pantas untuk permulaan lancar di Pussy888 Malaysia."
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <!-- 8. Tips for New Players -->
     <div class="mx-auto max-w-7xl px-4 py-10">
@@ -499,173 +478,47 @@
         </div>
     </div>
 
-    <div
-        class="mx-auto max-w-7xl px-4 py-10"
-        id="faqs"
-        x-data="{ open: 0 }"
-    >
-
-        <div class="mb-6">
-            <div class="text-2xl font-bold">Soalan Lazim (FAQ)</div>
-            <div class="text-sm text-white/70">Jawapan pantas untuk permulaan yang lancar di Pussy888 Malaysia.</div>
-        </div>
-
-        <div class="space-y-3">
-
-            <!-- Q1 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===1 ? 0 : 1"
-                    >
-                        <div class="font-semibold">Bagaimana saya mendapatkan aplikasi dengan selamat?</div>
-                        <span class="transition" :class="open === 1 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===1"
-                    x-transition
-                >
-                    Dapatkan aplikasi hanya dari laman rasmi atau sumber yang disahkan. Untuk Android, muat turun APK
-                    dan aktifkan
-                    “Pasang daripada sumber tidak diketahui.” Untuk iOS, ikut langkah pada skrin untuk pasang dan
-                    percayai profil aplikasi.
-                </div>
-            </div>
-
-            <!-- Q2 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===2 ? 0 : 2"
-                    >
-                        <div class="font-semibold">Adakah platform serasi dengan peranti saya?</div>
-                        <span class="transition" :class="open === 2 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===2"
-                    x-transition
-                >
-                    Ya. Ia menyokong Android dan iOS, dan anda juga boleh bermain melalui pelayar mudah alih tanpa
-                    pemasangan.
-                </div>
-            </div>
-
-            <!-- Q3 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===3 ? 0 : 3"
-                    >
-                        <div class="font-semibold">Berapa lama masa diambil untuk pengeluaran?</div>
-                        <span class="transition" :class="open === 3 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===3"
-                    x-transition
-                >
-                    Biasanya dalam masa 24 jam selepas pengesahan, bergantung kepada kaedah pembayaran yang dipilih.
-                </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===4 ? 0 : 4"
-                    >
-                        <div class="font-semibold">Apakah bonus yang ditawarkan?</div>
-                        <span class="transition" :class="open === 4 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===4"
-                    x-transition
-                >
-                    Bonus selamat datang, promosi harian/mingguan, dan program VIP dengan ganjaran eksklusif. Sentiasa
-                    semak terma pertaruhan.
-                </div>
-            </div>
-
-            <!-- Q5 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===5 ? 0 : 5"
-                    >
-                        <div class="font-semibold">Adakah platform ini adil dan selamat?</div>
-                        <span class="transition" :class="open === 5 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===5"
-                    x-transition
-                >
-                    Ya. Ia menggunakan RNG yang diperakui untuk keputusan adil dan penyulitan SSL untuk keselamatan
-                    data.
-                </div>
-            </div>
-
-            <!-- Q6 -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div class="flex items-center gap-3 px-4 py-3">
-                    <img
-                        class="size-8 rounded object-cover"
-                        src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
-                        alt=""
-                    >
-                    <button class="flex w-full items-center justify-between text-left"
-                        @click="open = open===6 ? 0 : 6"
-                    >
-                        <div class="font-semibold">Bagaimana jika saya terlupa butiran log masuk?</div>
-                        <span class="transition" :class="open === 6 ? 'rotate-180' : ''">⌄</span>
-                    </button>
-                </div>
-                <div
-                    class="px-4 pb-4 text-sm text-white/80"
-                    x-show="open===6"
-                    x-transition
-                >
-                    Guna pilihan <em>Lupa Kata Laluan</em> di halaman log masuk untuk menetapkan semula kelayakan anda
-                    dengan selamat.
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    <!-- 10. FAQs -->
+    @php
+        $faqs = [
+            [
+                'q' => 'Bagaimana saya boleh dapatkan aplikasi dengan selamat?',
+                'a' =>
+                    'Dapatkan aplikasi hanya dari laman web rasmi atau sumber yang disahkan. Untuk Android, muat turun APK dan aktifkan “Pasang daripada sumber tidak diketahui.” Untuk iOS, ikut arahan pada skrin untuk memasang dan sahkan profil aplikasi.',
+            ],
+            [
+                'q' => 'Adakah platform ini serasi dengan peranti saya?',
+                'a' =>
+                    'Ya. Ia menyokong Android dan iOS, dan anda juga boleh bermain melalui pelayar mudah alih tanpa memasang apa-apa.',
+            ],
+            [
+                'q' => 'Berapa lama pengeluaran mengambil masa?',
+                'a' =>
+                    'Kebiasaannya dalam tempoh 24 jam selepas pengesahan, bergantung pada kaedah pembayaran yang dipilih.',
+            ],
+            [
+                'q' => 'Bonus apa yang ditawarkan?',
+                'a' =>
+                    'Bonus alu-aluan, promo harian/mingguan, dan program VIP dengan ganjaran eksklusif. Sentiasa semak terma pertaruhan.',
+            ],
+            [
+                'q' => 'Adakah platform ini adil dan selamat?',
+                'a' =>
+                    'Ya. Ia menggunakan RNG bertauliah untuk keputusan yang adil dan penyulitan SSL untuk keselamatan data.',
+            ],
+            [
+                'q' => 'Apa berlaku jika saya lupa butiran log masuk?',
+                'a' =>
+                    'Gunakan pilihan Lupa Kata Laluan di halaman log masuk untuk menetapkan semula maklumat dengan selamat.',
+            ],
+        ];
+    @endphp
+    <x-partials.accordion
+        title="Soalan Lazim (FAQ)"
+        subtitle="Jawapan pantas untuk permulaan lancar di Pussy888 Malaysia."
+        :items="$faqs"
+        :open-index="null"
+    />
 
     <div class="text-white" id="cta">
         <div class="mx-auto max-w-7xl px-4 py-12">

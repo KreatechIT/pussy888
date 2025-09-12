@@ -3,6 +3,8 @@
 namespace App\Filament\Resources\Categories\Schemas;
 
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Group;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
@@ -14,18 +16,22 @@ class CategoryForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
-                    ->live(onBlur: true)
-                    ->afterStateUpdated(function (Get $get, Set $set, ?string $old, ?string $state) {
-                        if (($get('slug') ?? '') !== Str::slug($old)) {
-                            return;
-                        }
+                Section::make([
+                    Group::make([
+                        TextInput::make('name')
+                            ->live(onBlur: true)
+                            ->afterStateUpdated(function (Get $get, Set $set, ?string $old, ?string $state) {
+                                if (($get('slug') ?? '') !== Str::slug($old)) {
+                                    return;
+                                }
 
-                        $set('slug', Str::slug($state));
-                    })
-                    ->required(),
-                TextInput::make('slug')
-                    ->required(),
+                                $set('slug', Str::slug($state));
+                            })
+                            ->required(),
+                        TextInput::make('slug')
+                            ->required(),
+                    ])->columns(2)
+                ])->columnSpanFull(),
             ]);
     }
 }
