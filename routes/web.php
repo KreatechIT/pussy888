@@ -59,7 +59,7 @@ Route::get('/generate-sitemap', function () {
     Artisan::call('app:generate-sitemap');
 });
 
-Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
+Route::get('/sitemap', function (SiteMapBuilder $builder) {
     $path = public_path('sitemap.xml');
 
     if (! file_exists($path)) {

@@ -513,30 +513,16 @@
         :open-index="null"
     />
 
-    <div class="text-white" id="cta">
-        <div class="mx-auto max-w-7xl px-4 py-12">
-            <div class="grid items-center gap-6 md:grid-cols-3">
-                <div class="md:col-span-2">
-                    <div class="text-2xl font-bold">Pussy888 Malaysia – Play Safely, Win Big</div>
-                    <div class="mt-2 text-white/80">
-                        Enjoy a huge game library (including pokies), generous bonuses (like the 100 free spins offer),
-                        secure payments, and responsive support—on desktop and mobile.
-                    </div>
-                    <div class="mt-4 flex flex-wrap gap-3">
-                        <x-partials.button href="#">Download App</x-partials.button>
-                        <x-partials.button type="outline" href="#">Create Account</x-partials.button>
-                        <x-partials.button type="outline" href="#">Explore Games</x-partials.button>
-                    </div>
-                </div>
-                <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                    <!-- Interactive placeholder image (swap later) -->
-                    <img
-                        class="h-full w-full object-cover"
-                        src="{{ asset('assets/frontend/images/qr-code.jpeg') }}"
-                        alt="QR Code"
-                    >
-                </div>
-            </div>
+    <x-partials.download
+        title="Pussy888 Malaysia – Play Safely, Win Big"
+        primaryCtaText="Download App"
+        primaryCtaLink="#"
+        secondaryCtaText="Explore Games"
+        secondaryCtaLink="#"
+    >
+        <div class="text-white">
+            Enjoy a huge game library (including pokies), generous bonuses (like the 100 free spins offer),
+            secure payments, and responsive support—on desktop and mobile.
         </div>
-    </div>
+    </x-partials.download>
 </div>

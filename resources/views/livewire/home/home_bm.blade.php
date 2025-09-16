@@ -520,31 +520,17 @@
         :open-index="null"
     />
 
-    <div class="text-white" id="cta">
-        <div class="mx-auto max-w-7xl px-4 py-12">
-            <div class="grid items-center gap-6 md:grid-cols-3">
-                <div class="md:col-span-2">
-                    <div class="text-2xl font-bold">Pussy888 Malaysia – Bermain dengan Selamat, Menang Besar</div>
-                    <div class="mt-2 text-white/80">
-                        Nikmati perpustakaan permainan yang besar (termasuk pokies), bonus murah hati (seperti tawaran
-                        100 putaran percuma),
-                        pembayaran selamat, dan sokongan responsif—di desktop dan mudah alih.
-                    </div>
-                    <div class="mt-4 flex flex-wrap gap-3">
-                        <x-partials.button href="#">Muat Turun Aplikasi</x-partials.button>
-                        <x-partials.button type="outline" href="#">Cipta Akaun</x-partials.button>
-                        <x-partials.button type="outline" href="#">Terokai Permainan</x-partials.button>
-                    </div>
-                </div>
-                <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                    <!-- Interactive placeholder image (swap later) -->
-                    <img
-                        class="h-full w-full object-cover"
-                        src="{{ asset('assets/frontend/images/qr-code.jpeg') }}"
-                        alt="Kod QR"
-                    >
-                </div>
-            </div>
+    <x-partials.download
+        title="Pussy888 Malaysia – Bermain dengan Selamat, Menang Besar"
+        primaryCtaText="Muat Turun Aplikasi"
+        primaryCtaLink="#"
+        secondaryCtaText="Terokai Permainan"
+        secondaryCtaLink="#"
+    >
+        <div class="text-white">
+            Nikmati perpustakaan permainan yang besar (termasuk pokies), bonus murah hati (seperti tawaran
+            100 putaran percuma),
+            pembayaran selamat, dan sokongan responsif—di desktop dan mudah alih.
         </div>
-    </div>
+    </x-partials.download>
 </div>

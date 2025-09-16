@@ -105,7 +105,7 @@
             <!-- Intro callout -->
             <div class="mb-6 rounded-xl border border-white/10 bg-white/[0.03] p-4">
                 <article
-                    class="prose dark:prose-invert prose-table:border prose-table:rounded prose-table:border-white/20 prose-table:p-2 prose-thead:bg-slate-400 prose-thead:border-b prose-thead:border-white/20 prose-th:border prose-th:text-white prose-th:px-4 prose-th:py-2 prose-td:px-4 prose-td:py-2 prose-td:border prose-table:w-full prose-table:table-auto prose-table:border-separate max-w-none space-y-4 text-sm leading-relaxed text-white/90"
+                    class="prose dark:prose-invert prose-table:border prose-table:rounded prose-table:border-white/20 prose-table:p-2 prose-thead:bg-slate-400 prose-thead:border-b prose-thead:border-white/20 prose-th:border prose-th:text-white prose-th:px-4 prose-th:py-2 prose-td:px-4 prose-td:py-2 prose-td:border prose-table:w-full prose-table:table-auto prose-table:border-separate prose-a:text-purple-300 prose-a:no-underline prose-a:hover:text-pink-400 prose-a:hover:underline prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6 max-w-none space-y-4 text-sm leading-relaxed text-white/90 marker:text-base marker:font-semibold marker:text-purple-400 prose-ul:!whitespace-normal prose-li:!whitespace-normal"
                 >
                     {!! $blog->content !!}
                 </article>
