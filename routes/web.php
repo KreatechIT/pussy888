@@ -55,11 +55,9 @@ Route::middleware([\App\Http\Middleware\Language::class])
             Artisan::call('storage:link');
         });
     });
-Route::get('/generate-sitemap', function () {
-    Artisan::call('app:generate-sitemap');
-});
 
-Route::get('/sitemap', function (SiteMapBuilder $builder) {
+Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
+    Artisan::call('app:generate-sitemap');
     $path = public_path('sitemap.xml');
 
     if (! file_exists($path)) {

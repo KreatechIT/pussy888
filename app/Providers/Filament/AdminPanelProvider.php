@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Resources\Blogs\BlogResource;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -54,8 +55,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationItems([
                 NavigationItem::make('Back To Home')
-                    ->icon('heroicon-o-arrow-left')
-                    ->url('/en', shouldOpenInNewTab: true),
+                    ->icon('heroicon-o-home')
+                    ->url(fn (): string => route('home', [app()->getLocale()]), shouldOpenInNewTab: true),
             ])
             ->resourceCreatePageRedirect('index', ['_ts' => now()->timestamp])
             ->resourceEditPageRedirect('index', ['_ts' => now()->timestamp])
