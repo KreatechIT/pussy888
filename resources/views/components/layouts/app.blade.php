@@ -11,7 +11,6 @@
     <meta name="description" content="@stack('meta_description')">
     <meta name="keywords" content="@stack('meta_keywords')">
 
-
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/frontend/images/logo.png') }}" type="image/x-icon">
 
@@ -21,6 +20,14 @@
 
     <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+
+    <!-- hreflang Tags -->
+    <link rel="alternate" href="{{ route('home', ['locale' => 'en']) }}" hreflang="en" />
+    <link rel="alternate" href="{{ route('home', ['locale' => 'bm']) }}" hreflang="bm" />
+    <link rel="alternate" href="{{ route('home', ['locale' => 'zh']) }}" hreflang="zh" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

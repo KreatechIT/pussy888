@@ -147,7 +147,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/devices/jackpot-mobile.jpg') }}"
+                    src="{{ asset('assets/frontend/images/jackpots/jackpot-mobile.jpg') }}"
                     alt="随地畅玩"
                 >
             </div>

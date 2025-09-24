@@ -116,6 +116,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
+                    <img
+                        class="h-full w-full object-cover"
+                        src="{{ asset('assets/frontend/images/slots/why-play-games-at-pussy888.jpg') }}"
+                        alt="Play Anywhere"
+                    >
+                </div>
             </div>
 
             <p class="mt-4 text-sm text-white/70">

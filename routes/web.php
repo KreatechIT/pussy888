@@ -56,7 +56,7 @@ Route::middleware([\App\Http\Middleware\Language::class])
         });
     });
 
-Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
+Route::get('/en/sitemap.xml', function (SiteMapBuilder $builder) {
     Artisan::call('app:generate-sitemap');
     $path = public_path('sitemap.xml');
 

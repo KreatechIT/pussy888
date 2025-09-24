@@ -19,9 +19,25 @@ class GenerateSitemap extends Command
 
         $sitemap = Sitemap::create();
 
-        $base = rtrim(config('app.url'), '/');
-
         $pages = [
+            route('home', ['lang' => 'en']),
+            route('faq', ['lang' => 'en']),
+            route('about-us', ['lang' => 'en']),
+            route('download', ['lang' => 'en']),
+            route('game-guides', ['lang' => 'en']),
+            route('how-to-play', ['lang' => 'en']),
+            route('terms-and-conditions', ['lang' => 'en']),
+            route('responsible-gaming', ['lang' => 'en']),
+            route('privacy-policy', ['lang' => 'en']),
+            route('contact-us', ['lang' => 'en']),
+            route('promotions', ['lang' => 'en']),
+            route('payments', ['lang' => 'en']),
+            route('game', ['lang' => 'en']),
+            route('slot', ['lang' => 'en']),
+            route('live-casino', ['lang' => 'en']),
+            route('table-games', ['lang' => 'en']),
+            route('jackpot', ['lang' => 'en']),
+            route('blog', ['lang' => 'en']),
             '/',
             'faq',
             'about-us',
@@ -45,7 +61,7 @@ class GenerateSitemap extends Command
         foreach ($pages as $url) {
             $sitemap->add(
                 Url::create($url)
-                    ->setPriority($url === $base.'/' ? 1.0 : 0.8)
+                    ->setPriority($url === route('home', ['lang' => 'en']) ? 1.0 : 0.8)
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
             );
         }
@@ -56,10 +72,10 @@ class GenerateSitemap extends Command
             ->whereNotNull('slug')
             ->where('slug', '!=', '')
             ->orderByDesc('id')
-            ->chunk(200, function ($blogs) use ($sitemap, $base) {
+            ->chunk(200, function ($blogs) use ($sitemap) {
                 foreach ($blogs as $blog) {
                     $sitemap->add(
-                        Url::create($base.'/blog/'.$blog->slug)
+                        Url::create(route('blog.show', ['lang' => 'en', 'slug' => $blog->slug]))
                             ->setLastModificationDate($blog->updated_at ?? $blog->created_at)
                             ->setPriority(0.8)
                             ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)

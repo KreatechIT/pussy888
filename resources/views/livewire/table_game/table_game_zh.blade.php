@@ -37,7 +37,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover"
-                        src="{{ asset('assets/frontend/images/table-games/hero-table.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/What are table games-min.png') }}"
                         alt="Pussy888 桌面游戏"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -68,7 +68,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/table-games/blackjack.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/blackjack.png') }}"
                         alt="二十一点"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -95,7 +95,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/table-games/roulette.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/roulette.png') }}"
                         alt="轮盘"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -122,7 +122,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/table-games/baccarat.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/baccarat.png') }}"
                         alt="百家乐"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -149,7 +149,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/table-games/sicbo.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/sicbo.png') }}"
                         alt="骰宝"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -176,7 +176,7 @@
                 <div class="relative aspect-[16/9]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/table-games/dragontiger.webp') }}"
+                        src="{{ asset('assets/frontend/images/table_games/dragontiger.png') }}"
                         alt="龙虎斗"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -230,7 +230,7 @@
             <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/table-games/devices.webp') }}"
+                    src="{{ asset('assets/frontend/images/table_games/devices.png') }}"
                     alt="任意设备畅玩"
                 >
             </div>
@@ -331,7 +331,7 @@
             <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/table-games/live-dealer.webp') }}"
+                    src="{{ asset('assets/frontend/images/table_games/live_dealer.jpg') }}"
                     alt="真人荷官游戏"
                 >
             </div>

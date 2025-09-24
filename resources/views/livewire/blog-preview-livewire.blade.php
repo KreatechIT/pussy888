@@ -1,3 +1,10 @@
+@push('title')
+    {{ $blog->meta_title }}
+@endpush
+
+@push('meta_description')
+    {{ $blog->meta_description }}
+@endpush
 <div
     class="min-h-screen bg-black text-white"
     x-data="{

@@ -114,7 +114,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
+                    src="{{ asset('assets/frontend/images/home/play-now.jpg') }}"
                     alt=""
                 >
             </div>
@@ -206,9 +206,9 @@
             cat: 'slots',
             slide: 0,
             items: [
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Dragon Treasure' },
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Golden Fist' },
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Safari Life' }
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-1.jpg') }}', t: 'Dragon Treasure' },
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-2.jpg') }}', t: 'Golden Fist' },
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-3.jpg') }}', t: 'Safari Life' }
             ]
         }"
     >
@@ -471,7 +471,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
+                    src="{{ asset('assets/frontend/images/home/24-7-support.jpg') }}"
                     alt=""
                 >
             </div>
