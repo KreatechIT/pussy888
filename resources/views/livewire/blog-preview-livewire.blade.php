@@ -1,4 +1,8 @@
 @push('title')
+    {{ $blog->heading }}
+@endpush
+
+@push('meta_title')
     {{ $blog->meta_title }}
 @endpush
 
@@ -112,14 +116,14 @@
             <!-- Intro callout -->
             <div class="mb-6 rounded-xl border border-white/10 bg-white/[0.03] p-4">
                 <article
-                    class="prose dark:prose-invert prose-a:text-purple-300 prose-a:no-underline prose-a:hover:text-pink-400 prose-a:hover:underline prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6 max-w-none space-y-4 text-sm leading-relaxed text-white/90 marker:text-base marker:font-semibold marker:text-purple-400 prose-ul:!whitespace-normal prose-li:!whitespace-normal"
+                    class="prose prose-invert prose-a:text-purple-300 prose-a:no-underline prose-a:hover:text-pink-400 prose-a:hover:underline prose-ul:list-disc prose-ul:!pl-6 prose-ol:list-decimal prose-ol:!pl-6 prose-ul:!whitespace-normal prose-li:!whitespace-normal max-w-none space-y-4 text-sm leading-relaxed marker:text-base marker:font-semibold marker:text-purple-400"
                 >
                     {!! $blog->content !!}
                 </article>
             </div>
 
             <!-- Share + Tags -->
-            <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
+            {{-- <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
                 <div class="flex flex-wrap items-center gap-2 text-xs">
                     <a class="rounded-full bg-white/10 px-2 py-1 text-white/70 ring-1 ring-white/10 hover:bg-white/15"
                         href="#"
@@ -135,8 +139,13 @@
                     <a class="rounded-md border border-white/10 px-2 py-1 hover:bg-white/5" href="#">Copy
                         Link</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
+    </div>
+
+    <!-- Comments -->
+    <div class="mx-auto max-w-7xl px-4 pb-12 scroll-mt-24" id="comments">
+        <livewire:blog-comment-livewire :key="'comments' . $blog->id" :$blog />
     </div>
 
     <!-- Related posts -->

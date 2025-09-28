@@ -57,14 +57,17 @@ Route::middleware([\App\Http\Middleware\Language::class])
     });
 
 Route::get('/en/sitemap.xml', function (SiteMapBuilder $builder) {
-    Artisan::call('app:generate-sitemap');
     $path = public_path('sitemap.xml');
 
+    // Check if the sitemap.xml file exists
     if (! file_exists($path)) {
-        // First request will generate it.
+        // If the file does not exist, generate it
+        Artisan::call('app:generate-sitemap');
+        // After generating, write it to the public directory
         $builder->writeToPublic();
     }
 
+    // Serve the sitemap.xml file
     return response()->file($path, [
         'Content-Type' => 'application/xml',
         // Optional cache headers:

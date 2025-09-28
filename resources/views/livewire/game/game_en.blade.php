@@ -60,8 +60,11 @@
                 <div class="mt-1 text-sm text-white/70">Hundreds of titles with free spins, multipliers & jackpots.
                 </div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('slot', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('slot', [app()->getLocale()]) }}"
+                        wire:navigate.hover
+                    >Explore →
                     </a>
                 </div>
             </div>
@@ -69,8 +72,11 @@
                 <div class="text-lg font-semibold">Live Casino</div>
                 <div class="mt-1 text-sm text-white/70">HD streams & pro dealers: Baccarat, Roulette, Blackjack.</div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('live-casino', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('live-casino', [app()->getLocale()]) }}"
+                        wire:navigate.hover
+                    >Explore →
                     </a>
                 </div>
             </div>
@@ -78,8 +84,11 @@
                 <div class="text-lg font-semibold">Table Games</div>
                 <div class="mt-1 text-sm text-white/70">Strategy classics with smooth controls & fair RNG.</div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('table-games', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('table-games', [app()->getLocale()]) }}"
+                        wire:navigate.hover
+                    >Explore →
                     </a>
                 </div>
             </div>
@@ -112,31 +121,58 @@
             </div>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Popular Features:</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Free spins and bonus rounds</li>
-                        <li>Wilds, scatters, and multipliers</li>
-                        <li>Progressive pussy888 jackpots</li>
-                        <li>Auto-play and fast-spin modes</li>
-                        <li>Stunning visuals and smooth animations</li>
-                    </ul>
-                </div>
-
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Top Slot Titles:</div>
-                    <div class="mt-3 flex flex-wrap gap-2">
-                        @foreach (['Safari Life', 'Great Blue', 'Panther Moon', 'Highway Kings', 'Bonus Bear'] as $title)
-                            <div class="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm">
-                                {{ $title }}</div>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Popular Features</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Free spins and bonus rounds', 'Wilds, scatters, and multipliers', 'Progressive pussy888 jackpots', 'Auto-play and fast-spin modes', 'Stunning visuals and smooth animations'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
                         @endforeach
                     </div>
-                    <p class="mt-4 text-sm text-white/80">
-                        Whether you're chasing small frequent wins or aiming for a life-changing payout, our slots offer
-                        endless excitement.
-                    </p>
+                </div>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Top Slot Titles</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Safari Heat', 'image' => 'slots/safari-heat.jpg'], ['title' => 'Great Blue', 'image' => 'slots/great-blue.jpg'], ['title' => 'Panther Moon', 'image' => 'slots/panther-moon.jpg'], ['title' => 'Highway Kings', 'image' => 'slots/highway-kings.jpg'], ['title' => 'Bonus Bear', 'image' => 'slots/bonus-bear.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
                 </div>
             </div>
+            <p class="mt-4 text-sm text-white/80">
+                Whether you're chasing small frequent wins or aiming for a life-changing payout, our slots offer endless
+                excitement.
+            </p>
         </div>
     </div>
 
@@ -152,27 +188,56 @@
             </p>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Available Live Games:</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Live Baccarat</li>
-                        <li>Live Blackjack</li>
-                        <li>Live Roulette</li>
-                        <li>Sic Bo</li>
-                        <li>Dragon Tiger</li>
-                    </ul>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Available Live Games:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Live Baccarat', 'image' => 'live_casino/baccarat.jpg'], ['title' => 'Live Blackjack', 'image' => 'live_casino/blackjack.jpg'], ['title' => 'Live Roulette', 'image' => 'live_casino/roulette.jpg'], ['title' => 'Sic Bo', 'image' => 'live_casino/sic-bo.jpg'], ['title' => 'Dragon Tiger', 'image' => 'live_casino/dragon-tiger.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Why You’ll Love It</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Real-time betting with instant results</li>
-                        <li>Chat with dealers and enjoy social gameplay</li>
-                        <li>Crystal-clear HD streams</li>
-                        <li>Play on mobile or desktop seamlessly</li>
-                    </ul>
-                    <p class="mt-3 text-sm text-white/70">It’s as close to the real casino floor as you can get!</p>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Why You’ll Love It</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Real-time betting with instant results', 'Chat with dealers and enjoy social gameplay', 'Crystal-clear HD streams', 'Play on mobile or desktop seamlessly'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
+            <p class="mt-4 text-sm text-white/80">
+                It’s as close to the real casino floor as you can get!
+            </p>
         </div>
     </div>
 
@@ -186,22 +251,52 @@
             </p>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Table Games You’ll Find:</div>
-                    <div class="mt-3 flex flex-wrap gap-2">
-                        @foreach (['Blackjack', 'Roulette', 'Poker', 'Sic Bo', 'Three Card Brag'] as $g)
-                            <div class="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm">
-                                {{ $g }}</div>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Player Friendly</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Smooth controls & detailed instructions', 'Fair RNG-based outcomes', 'Great for beginners and pros alike'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
                         @endforeach
                     </div>
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Player Friendly</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Smooth controls & detailed instructions</li>
-                        <li>Fair RNG-based outcomes</li>
-                        <li>Great for beginners and pros alike</li>
-                    </ul>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Table Games You’ll Find:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Blackjack', 'image' => 'table_games/blackjack.png'], ['title' => 'Roulette', 'image' => 'table_games/roulette.png'], ['title' => 'Poker', 'image' => 'table_games/baccarat.png'], ['title' => 'Sic Bo', 'image' => 'table_games/sicbo.png'], ['title' => 'Three Card Brag', 'image' => 'table_games/dragontiger.png']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div
+                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,34 +311,87 @@
                 These progressive slots grow their prize pools with every spin — meaning the longer they run, the bigger
                 the jackpot gets.
             </p>
-            <p class="mt-3 text-white/80">
-                Keep an eye out for special symbols and bonus triggers — you never know when you’ll hit the next big
-                win!
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Available Live Games:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Great Blue Jackpot', 'image' => 'jackpots/great-blue.jpg'], ['title' => 'Safari Heat Jackpot', 'image' => 'jackpots/safari-heat.jpg'], ['title' => 'Panther Moon Jackpot', 'image' => 'jackpots/panther-moon.jpg'], ['title' => 'Highway Kings Progressive', 'image' => 'jackpots/highway-kings.jpg'], ['title' => 'Bonus Bear Jackpot', 'image' => 'jackpots/bonus-bear.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div
+                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Why You’ll Love It</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Real-time betting with instant results', 'Chat with dealers and enjoy social gameplay', 'Crystal-clear HD streams', 'Play on mobile or desktop seamlessly'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-white/80">
+                Keep an eye out for special symbols and bonus triggers — you never know when you’ll hit the next
+                big win!
             </p>
         </div>
     </div>
 
     <!-- Mobile / Desktop -->
     <div class="mx-auto max-w-7xl px-4 pb-10" id="mobile-desktop">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-            <h2 class="text-2xl font-bold">Play on Mobile or Desktop</h2>
-            <p class="mt-2 text-white/80">
-                All Pussy888 games are fully optimized for mobile devices (Android & iOS) and desktop browsers.
+        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 class="text-2xl font-bold tracking-tight">Play on Mobile or Desktop</h2>
+            <p class="mt-3 leading-relaxed text-white/80">
+                All Pussy888 games are fully optimized for mobile devices (Android &amp; iOS) and desktop browsers.
                 Whether you're at home or on the move, your favorite games are just a tap away.
             </p>
 
-            <div class="mt-4 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <ul class="space-y-2 text-sm text-white/80">
-                        <li>Smooth gameplay with fast loading speeds</li>
-                        <li>Touch-friendly interfaces for mobile play</li>
-                        <li>Compatible with the Pussy888 mobile app and browser version</li>
-                        <li>Auto-adjusting graphics for any screen size</li>
-                    </ul>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="mt-4 space-y-2">
+                    @foreach (['Smooth gameplay with fast loading speeds', 'Touch-friendly interfaces for mobile play', 'Compatible with the Pussy888 mobile app and browser version', 'Auto-adjusting graphics for any screen size'] as $feature)
+                        <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                            <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                            <div class="text-sm text-white/70">{{ $feature }}</div>
+                        </div>
+                    @endforeach
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="text-sm text-white/70">Pro Tip</div>
-                    <p class="mt-2 text-sm text-white/80">
+
+                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5 md:p-6">
+                    <div
+                        class="inline-flex items-center rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-xs font-medium uppercase tracking-wide text-white/70">
+                        Pro Tip
+                    </div>
+                    <p class="mt-3 text-sm leading-relaxed text-white/80">
                         For the best experience, keep your app updated and enable hardware acceleration in supported
                         browsers.
                     </p>
