@@ -93,7 +93,7 @@
                 <div class="relative aspect-[16/10]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/live/baccarat.jpg') }}"
+                        src="{{ asset('assets/frontend/images/live_casino/baccarat.jpg') }}"
                         alt="真人百家乐"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -118,7 +118,7 @@
                 <div class="relative aspect-[16/10]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/live/blackjack.jpg') }}"
+                        src="{{ asset('assets/frontend/images/live_casino/blackjack.jpg') }}"
                         alt="真人二十一点"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -141,7 +141,7 @@
                 <div class="relative aspect-[16/10]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/live/roulette.jpg') }}"
+                        src="{{ asset('assets/frontend/images/live_casino/roulette.jpg') }}"
                         alt="真人轮盘"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -164,7 +164,7 @@
                 <div class="relative aspect-[16/10]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/live/dragon-tiger.jpg') }}"
+                        src="{{ asset('assets/frontend/images/live_casino/dragon-tiger.jpg') }}"
                         alt="龙虎"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -187,7 +187,7 @@
                 <div class="relative aspect-[16/10]">
                     <img
                         class="h-full w-full object-cover transition group-hover:scale-[1.02]"
-                        src="{{ asset('assets/frontend/images/live/sic-bo.jpg') }}"
+                        src="{{ asset('assets/frontend/images/live_casino/sic-bo.jpg') }}"
                         alt="骰宝"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -298,16 +298,12 @@
                 </div>
 
                 <!-- Visual (placeholder) -->
-                <div
-                    class="relative order-first h-56 w-full overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/20 via-pink-500/10 to-amber-400/10 md:order-last md:h-[300px]">
-                    <div class="absolute inset-0 m-6 rounded-xl border border-white/10 bg-black/40 backdrop-blur">
-                    </div>
-                    <div
-                        class="absolute right-6 top-6 m-6 hidden h-40 w-28 rotate-6 rounded-xl border border-white/10 bg-black/60 shadow-xl md:block">
-                    </div>
-                    <div
-                        class="absolute bottom-6 left-10 hidden h-48 w-32 -rotate-6 rounded-xl border border-white/10 bg-black/60 shadow-xl md:block">
-                    </div>
+                <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
+                    <img
+                        class="h-full w-full object-cover"
+                        src="{{ asset('assets/frontend/images/live_casino/play mobile and desktop .png') }}"
+                        alt="Play Anywhere"
+                    >
                 </div>
             </div>
         </div>

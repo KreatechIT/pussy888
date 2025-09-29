@@ -16,6 +16,17 @@ class Language
      */
     public function handle(Request $request, Closure $next): Response
     {
+        // ✅ Skip static assets and storage files
+        if (
+            $request->is('assets/*') ||
+            $request->is('storage/*') ||
+            $request->is('images/*') ||
+            $request->is('css/*') ||
+            $request->is('js/*')
+        ) {
+            return $next($request);
+        }
+
         $lang = $request->segment(1);
         $language = ['en', 'bm', 'zh'];
 

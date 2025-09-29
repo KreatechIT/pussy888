@@ -81,7 +81,7 @@
                 <div class="group overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
                     <div class="relative aspect-[16/10] overflow-hidden">
                         <img
-                            class="h-full w-full object-cover transition group-hover:scale-[1.02]"
+                            class="h-full w-full object-center transition group-hover:scale-[1.02]"
                             src="{{ asset('assets/frontend/images/jackpots/' . $g['img']) }}"
                             alt="{{ $g['t'] }}"
                         >
@@ -156,7 +156,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/devices/jackpot-mobile.jpg') }}"
+                    src="{{ asset('assets/frontend/images/jackpots/jackpot-mobile.jpg') }}"
                     alt="Play Anywhere"
                 >
             </div>

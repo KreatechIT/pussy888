@@ -110,7 +110,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
+                    src="{{ asset('assets/frontend/images/home/play-now.jpg') }}"
                     alt=""
                 >
             </div>
@@ -194,9 +194,9 @@
             cat: 'slots',
             slide: 0,
             items: [
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Dragon Treasure' },
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Golden Fist' },
-                { img: '{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}', t: 'Safari Life' }
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-1.jpg') }}', t: 'Dragon Treasure' },
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-2.jpg') }}', t: 'Golden Fist' },
+                { img: '{{ asset('assets/frontend/images/home/Explore-the-Game-Library-3.jpg') }}', t: 'Safari Life' }
             ]
         }"
     >
@@ -452,7 +452,7 @@
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 <img
                     class="h-full w-full object-cover"
-                    src="{{ asset('assets/frontend/images/placeholder/800x450.jpg') }}"
+                    src="{{ asset('assets/frontend/images/home/24-7-support.jpg') }}"
                     alt=""
                 >
             </div>
@@ -496,29 +496,15 @@
         :open-index="null"
     />
 
-    <div class="text-white" id="cta">
-        <div class="mx-auto max-w-7xl px-4 py-12">
-            <div class="grid items-center gap-6 md:grid-cols-3">
-                <div class="md:col-span-2">
-                    <div class="text-2xl font-bold">Pussy888 马来西亚——安全游玩，赢取大奖</div>
-                    <div class="mt-2 text-white/80">
-                        享受庞大的游戏库（包括 pokies）、丰厚红利（如 100 次免费旋转优惠）、安全支付与高效客服支持——桌面与移动端皆可畅玩。
-                    </div>
-                    <div class="mt-4 flex flex-wrap gap-3">
-                        <x-partials.button href="#">下载应用</x-partials.button>
-                        <x-partials.button type="outline" href="#">创建账户</x-partials.button>
-                        <x-partials.button type="outline" href="#">探索游戏</x-partials.button>
-                    </div>
-                </div>
-                <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                    <!-- Interactive placeholder image (swap later) -->
-                    <img
-                        class="h-full w-full object-cover"
-                        src="{{ asset('assets/frontend/images/qr-code.jpeg') }}"
-                        alt="QR Code"
-                    >
-                </div>
-            </div>
+    <x-partials.download
+        title="Pussy888 马来西亚——安全游玩，赢取大奖"
+        primaryCtaText="下载应用"
+        primaryCtaLink="#"
+        secondaryCtaText="探索游戏"
+        secondaryCtaLink="#"
+    >
+        <div class="text-white">
+            享受庞大的游戏库（包括 pokies）、丰厚红利（如 100 次免费旋转优惠）、安全支付与高效客服支持——桌面与移动端皆可畅玩。
         </div>
-    </div>
+    </x-partials.download>
 </div>

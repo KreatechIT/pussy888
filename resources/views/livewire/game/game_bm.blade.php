@@ -14,21 +14,20 @@
                 <p class="mt-4 text-white/80">
                     Selamat datang ke hab Permainan Pussy888 — destinasi sehenti anda untuk permainan kasino dalam
                     talian
-                    paling mengujakan dan berbaloi di Malaysia.
-                    Sama ada anda meminati slot buah klasik, permainan dealer langsung berstak tinggi, atau slot video
+                    paling menarik dan berbaloi di Malaysia.
+                    Sama ada anda meminati slot buah klasik, permainan dealer langsung berisiko tinggi, atau slot video
                     moden
                     dengan jackpot besar,
                     Pussy888 Malaysia menawarkan permainan untuk setiap jenis pemain.
                 </p>
                 <p class="mt-3 text-white/80">
-                    Bersedia untuk menikmati permainan premium, grafik yang imersif, dan potensi kemenangan sebenar
-                    dengan
-                    pilihan judul kasino kami yang luas,
-                    tersedia di mudah alih dan desktop.
+                    Bersedia untuk menikmati permainan premium, grafik yang mengasyikkan, dan potensi kemenangan sebenar
+                    dengan pelbagai pilihan tajuk kasino kami,
+                    tersedia di mudah alih dan komputer.
                 </p>
             </div>
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-                <div class="text-sm text-white/70">Lompat Pantas</div>
+                <div class="text-sm text-white/70">Pintasan Pantas</div>
                 <div class="scroll-smooth">
                     <div class="mt-3 grid gap-2 sm:grid-cols-2">
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
@@ -45,7 +44,7 @@
                         >Permainan Jackpot</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
                             href="#mobile-desktop"
-                        >Mudah Alih/Desktop</a>
+                        >Mudah Alih/Komputer</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
                             href="#fair-safe"
                         >Adil & Selamat</a>
@@ -60,10 +59,13 @@
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
                 <div class="text-lg font-semibold">Permainan Slot</div>
-                <div class="mt-1 text-sm text-white/70">Ratusan judul dengan putaran percuma, pengganda & jackpot.</div>
+                <div class="mt-1 text-sm text-white/70">Ratusan tajuk dengan putaran percuma, pengganda & jackpot.</div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('slot', [app()->getLocale()]) }}" wire:navigate.hover>Terokai →
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('slot', [app()->getLocale()]) }}"
+                        wire:navigate.hover
+                    >Terokai →
                     </a>
                 </div>
             </div>
@@ -72,28 +74,32 @@
                 <div class="mt-1 text-sm text-white/70">Strim HD & dealer profesional: Baccarat, Roulette, Blackjack.
                 </div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('live-casino', [app()->getLocale()]) }}" wire:navigate.hover
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('live-casino', [app()->getLocale()]) }}"
+                        wire:navigate.hover
                     >Terokai →
                     </a>
                 </div>
             </div>
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
                 <div class="text-lg font-semibold">Permainan Meja</div>
-                <div class="mt-1 text-sm text-white/70">Klasik strategi dengan kawalan lancar & RNG yang adil.</div>
+                <div class="mt-1 text-sm text-white/70">Klasik berstrategi dengan kawalan lancar & RNG yang adil.</div>
                 <div class="mt-4">
-                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('table-games', [app()->getLocale()]) }}" wire:navigate.hover
+                    <a
+                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('table-games', [app()->getLocale()]) }}"
+                        wire:navigate.hover
                     >Terokai →
                     </a>
                 </div>
             </div>
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
                 <div class="text-lg font-semibold">Permainan Jackpot</div>
-                <div class="mt-1 text-sm text-white/70">Kolam progresif yang meningkat dengan setiap putaran.</div>
+                <div class="mt-1 text-sm text-white/70">Jackpot progresif yang meningkat dengan setiap putaran.</div>
                 <div class="mt-4">
                     <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('jackpot', [app()->getLocale()]) }}" wire:navigate.hover
+                        href="#jackpot-games"
                     >Terokai →
                     </a>
                 </div>
@@ -108,41 +114,67 @@
                 <div>
                     <h2 class="text-2xl font-bold">Permainan Slot</h2>
                     <p class="mt-2 text-white/80">
-                        Kategori paling popular kami, permainan slot Pussy888, menampilkan ratusan judul yang direka
-                        untuk semua citarasa dan bajet.
-                        Dari slot 3-gulung ringkas hingga pengembaraan 5-gulung sarat ciri, setiap permainan hadir
-                        dengan tema, ciri bonus dan potensi kemenangan tersendiri.
+                        Kategori permainan paling popular kami, slot Pussy888, menampilkan ratusan tajuk untuk
+                        semua citarasa dan bajet.
+                        Daripada slot 3-gulung ringkas hingga pengembaraan 5-gulung penuh ciri, setiap permainan hadir
+                        dengan tema, ciri bonus, dan potensi kemenangan tersendiri.
                     </p>
                 </div>
             </div>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Ciri Popular:</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Putaran percuma dan pusingan bonus</li>
-                        <li>Wild, scatter dan pengganda</li>
-                        <li>Jackpot progresif Pussy888</li>
-                        <li>Mod auto-play dan putaran pantas</li>
-                        <li>Visual menakjubkan dan animasi lancar</li>
-                    </ul>
-                </div>
-
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Tajuk Slot Teratas:</div>
-                    <div class="mt-3 flex flex-wrap gap-2">
-                        @foreach (['Safari Life', 'Great Blue', 'Panther Moon', 'Highway Kings', 'Bonus Bear'] as $title)
-                            <div class="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm">
-                                {{ $title }}</div>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Ciri Popular</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Putaran percuma dan pusingan bonus', 'Wild, scatter, dan pengganda', 'Jackpot progresif Pussy888', 'Mod auto-play dan fast-spin', 'Visual menakjubkan dan animasi lancar'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
                         @endforeach
                     </div>
-                    <p class="mt-4 text-sm text-white/80">
-                        Sama ada anda memburu kemenangan kecil yang kerap atau mengejar bayaran yang mengubah hidup,
-                        slot kami menawarkan
-                        keseronokan tanpa henti.
-                    </p>
+                </div>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Tajuk Slot Teratas</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Safari Heat', 'image' => 'slots/safari-heat.jpg'], ['title' => 'Great Blue', 'image' => 'slots/great-blue.jpg'], ['title' => 'Panther Moon', 'image' => 'slots/panther-moon.jpg'], ['title' => 'Highway Kings', 'image' => 'slots/highway-kings.jpg'], ['title' => 'Bonus Bear', 'image' => 'slots/bonus-bear.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
                 </div>
             </div>
+            <p class="mt-4 text-sm text-white/80">
+                Sama ada anda memburu kemenangan kecil yang kerap atau mengejar hadiah yang mengubah hidup, slot kami
+                menawarkan keseronokan tanpa henti.
+            </p>
         </div>
     </div>
 
@@ -152,31 +184,60 @@
             <h2 class="text-2xl font-bold">Kasino Langsung</h2>
             <p class="mt-2 text-white/80">
                 Mahukan aksi masa nyata? Kasino langsung Pussy888 membawa suasana kasino sebenar terus ke skrin anda.
-                Bermain menentang dealer profesional dan mesra melalui strim definisi tinggi dan permainan interaktif.
+                Bermain menentang dealer profesional dan mesra melalui strim definisi tinggi serta permainan interaktif.
             </p>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Permainan Langsung Tersedia:</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Baccarat Langsung</li>
-                        <li>Blackjack Langsung</li>
-                        <li>Roulette Langsung</li>
-                        <li>Sic Bo</li>
-                        <li>Dragon Tiger</li>
-                    </ul>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Permainan Langsung Tersedia:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Live Baccarat', 'image' => 'live_casino/baccarat.jpg'], ['title' => 'Live Blackjack', 'image' => 'live_casino/blackjack.jpg'], ['title' => 'Live Roulette', 'image' => 'live_casino/roulette.jpg'], ['title' => 'Sic Bo', 'image' => 'live_casino/sic-bo.jpg'], ['title' => 'Dragon Tiger', 'image' => 'live_casino/dragon-tiger.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Kenapa Anda Akan Suka</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Pertaruhan masa nyata dengan keputusan segera</li>
-                        <li>Berbual dengan dealer & nikmati permainan sosial</li>
-                        <li>Strim HD yang jelas</li>
-                        <li>Main lancar di mudah alih atau desktop</li>
-                    </ul>
-                    <p class="mt-3 text-sm text-white/70">Pengalaman paling hampir dengan lantai kasino sebenar!</p>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Kenapa Anda Akan Suka</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Pertaruhan masa nyata dengan keputusan segera', 'Sembang dengan dealer dan nikmati permainan sosial', 'Strim HD yang jelas', 'Main di mudah alih atau komputer dengan lancar'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
+            <p class="mt-4 text-sm text-white/80">
+                Ini hampir sama seperti berada di lantai kasino sebenar!
+            </p>
         </div>
     </div>
 
@@ -185,27 +246,58 @@
         <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
             <h2 class="text-2xl font-bold">Permainan Meja</h2>
             <p class="mt-2 text-white/80">
-                Gemar permainan strategi & kemahiran? Bahagian permainan meja di Pussy888 menawarkan versi digital
-                bagi pilihan klasik kegemaran.
+                Gemarkan permainan berasaskan strategi dan kemahiran? Bahagian permainan meja di Pussy888 menawarkan
+                versi digital
+                kegemaran klasik.
             </p>
 
             <div class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Permainan Meja Yang Ada:</div>
-                    <div class="mt-3 flex flex-wrap gap-2">
-                        @foreach (['Blackjack', 'Roulette', 'Poker', 'Sic Bo', 'Three Card Brag'] as $g)
-                            <div class="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm">
-                                {{ $g }}</div>
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Mesra Pemain</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Kawalan lancar & arahan terperinci', 'Keputusan adil berasaskan RNG', 'Sesuai untuk pemula dan pemain pro'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
                         @endforeach
                     </div>
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="font-semibold">Mesra Pemain</div>
-                    <ul class="mt-3 space-y-2 text-sm text-white/80">
-                        <li>Kawalan lancar & arahan terperinci</li>
-                        <li>Keputusan adil berasaskan RNG</li>
-                        <li>Sesuai untuk pemula dan pro</li>
-                    </ul>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Permainan Meja Yang Tersedia:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Blackjack', 'image' => 'table_games/blackjack.png'], ['title' => 'Roulette', 'image' => 'table_games/roulette.png'], ['title' => 'Poker', 'image' => 'table_games/baccarat.png'], ['title' => 'Sic Bo', 'image' => 'table_games/sicbo.png'], ['title' => 'Three Card Brag', 'image' => 'table_games/dragontiger.png']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div
+                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,42 +308,97 @@
         <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
             <h2 class="text-2xl font-bold">Permainan Jackpot</h2>
             <p class="mt-2 text-white/80">
-                Mahu menang besar? Cuba nasib anda pada permainan jackpot Pussy888 yang menawarkan hadiah mengubah
-                hidup.
-                Slot progresif ini menambah nilai kolam hadiah dengan setiap putaran — lebih lama ia berjalan, lebih
+                Mahu menang besar? Cuba nasib anda pada permainan jackpot Pussy888 yang menawarkan hadiah bernilai
+                tinggi.
+                Slot progresif ini menambah jumlah hadiah dengan setiap putaran — semakin lama ia berjalan, semakin
                 besar
                 jackpotnya.
             </p>
-            <p class="mt-3 text-white/80">
-                Perhatikan simbol khas dan pencetus bonus — anda tidak tahu bila kemenangan besar seterusnya akan tiba!
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <!-- Popular Features -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-lg font-bold text-black">
+                            🎰
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Permainan Langsung Tersedia:</div>
+                    </div>
+
+                    <!-- Grid of slot games -->
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        @foreach ([['title' => 'Great Blue Jackpot', 'image' => 'jackpots/great-blue.jpg'], ['title' => 'Safari Heat Jackpot', 'image' => 'jackpots/safari-heat.jpg'], ['title' => 'Panther Moon Jackpot', 'image' => 'jackpots/panther-moon.jpg'], ['title' => 'Highway Kings Progressive', 'image' => 'jackpots/highway-kings.jpg'], ['title' => 'Bonus Bear Jackpot', 'image' => 'jackpots/bonus-bear.jpg']] as $slot)
+                            <div
+                                class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <img
+                                    class="h-24 w-full object-cover"
+                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                    alt="{{ $slot['title'] }}"
+                                >
+                                <div
+                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                    {{ $slot['title'] }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                <!-- Top Slot Titles -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-lg font-bold text-black">
+                            ✨
+                        </div>
+                        <div class="text-2xl font-semibold text-white">Kenapa Anda Akan Suka</div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        @foreach (['Pertaruhan masa nyata dengan keputusan segera', 'Sembang dengan dealer dan nikmati permainan sosial', 'Strim HD yang jelas', 'Main di mudah alih atau komputer dengan lancar'] as $feature)
+                            <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                                <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                                <div class="text-sm text-white/70">{{ $feature }}</div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-white/80">
+                Sentiasa perhatikan simbol khas dan pencetus bonus — anda tidak tahu bila anda akan mendapat
+                kemenangan besar seterusnya!
             </p>
         </div>
     </div>
 
     <!-- Mobile / Desktop -->
     <div class="mx-auto max-w-7xl px-4 pb-10" id="mobile-desktop">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-            <h2 class="text-2xl font-bold">Main di Mudah Alih atau Desktop</h2>
-            <p class="mt-2 text-white/80">
-                Semua permainan Pussy888 dioptimumkan sepenuhnya untuk peranti mudah alih (Android & iOS) dan pelayar
-                desktop.
-                Sama ada di rumah atau dalam perjalanan, permainan kegemaran anda hanya selangkah sahaja.
+        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h2 class="text-2xl font-bold tracking-tight">Main di Mudah Alih atau Komputer</h2>
+            <p class="mt-3 leading-relaxed text-white/80">
+                Semua permainan Pussy888 dioptimumkan sepenuhnya untuk peranti mudah alih (Android &amp; iOS) dan
+                pelayar komputer.
+                Sama ada di rumah atau ketika bergerak, permainan kegemaran anda hanya satu ketikan sahaja.
             </p>
 
-            <div class="mt-4 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <ul class="space-y-2 text-sm text-white/80">
-                        <li>Permainan lancar dengan kelajuan muat pantas</li>
-                        <li>Antara muka mesra sentuhan untuk permainan mudah alih</li>
-                        <li>Serasi dengan aplikasi dan versi pelayar Pussy888</li>
-                        <li>Grafik melaras automatik untuk sebarang saiz skrin</li>
-                    </ul>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="mt-4 space-y-2">
+                    @foreach (['Permainan lancar dengan kelajuan muat pantas', 'Antara muka mesra sentuhan untuk permainan mudah alih', 'Serasi dengan aplikasi mudah alih Pussy888 dan versi pelayar', 'Grafik melaras automatik untuk apa jua saiz skrin'] as $feature)
+                        <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-3">
+                            <div class="mt-1 size-2 rounded-full bg-purple-400"></div>
+                            <div class="text-sm text-white/70">{{ $feature }}</div>
+                        </div>
+                    @endforeach
                 </div>
-                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-                    <div class="text-sm text-white/70">Tip Pro</div>
-                    <p class="mt-2 text-sm text-white/80">
+
+                <div class="rounded-xl border border-white/10 bg-white/[0.02] p-5 md:p-6">
+                    <div
+                        class="inline-flex items-center rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-xs font-medium uppercase tracking-wide text-white/70">
+                        Tip Pro
+                    </div>
+                    <p class="mt-3 text-sm leading-relaxed text-white/80">
                         Untuk pengalaman terbaik, pastikan aplikasi anda dikemas kini dan aktifkan pecutan perkakasan
-                        dalam pelayar yang disokong.
+                        dalam
+                        pelayar yang menyokong.
                     </p>
                 </div>
             </div>
@@ -263,9 +410,8 @@
         <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
             <h2 class="text-2xl font-bold">Adil, Selamat & Diperakui</h2>
             <p class="mt-2 text-white/80">
-                Setiap permainan di Pussy888 dikuasakan oleh penyedia perisian yang diperakui dan menggunakan Penjana
-                Nombor Rawak
-                (RNG)
+                Setiap permainan di Pussy888 dikuasakan oleh penyedia perisian bertauliah dan menggunakan Penjana Nombor
+                Rawak (RNG)
                 untuk memastikan keputusan yang adil. Platform kami disulitkan dan selamat, jadi anda boleh fokus pada
                 keseronokan
                 sementara kami melindungi data anda.
@@ -278,9 +424,9 @@
         <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
             <h2 class="text-2xl font-bold">Cuba Permainan Demo</h2>
             <p class="mt-2 text-white/80">
-                Tidak pasti mahu mula di mana? Banyak permainan kami menawarkan mod demo supaya anda boleh meneroka
+                Tidak pasti di mana hendak bermula? Banyak permainan kami menawarkan mod demo supaya anda boleh meneroka
                 ciri,
-                menguji strategi dan mempelajari peraturan — semuanya tanpa membelanjakan wang sebenar.
+                menguji strategi, dan mempelajari peraturan — semuanya tanpa menggunakan wang sebenar.
             </p>
         </div>
     </div>
@@ -293,9 +439,10 @@
         secondaryCtaText="Lihat Semua Permainan"
         secondaryCtaLink="#"
     >
-        Terokai senarai penuh permainan Pussy888 dan ketahui mengapa kami antara kasino dalam talian
-        kegemaran Malaysia.
-        Sama ada untuk hiburan atau keuntungan, Pussy888 menawarkan kualiti dan variasi tiada tandingan pada setiap
+        Terokai senarai penuh permainan Pussy888 dan ketahui mengapa kami antara
+        kasino dalam talian kegemaran di Malaysia.
+        Sama ada untuk hiburan atau keuntungan, Pussy888 memberikan kualiti dan kepelbagaian yang tiada tandingan dalam
+        setiap
         putaran, tangan, dan pusingan.
     </x-partials.download>
 </div>

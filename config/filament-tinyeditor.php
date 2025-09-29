@@ -30,7 +30,7 @@ return [
     'profiles' => [
         'default' => [
             'plugins' => 'accordion autoresize codesample directionality advlist link image lists preview pagebreak searchreplace wordcount code fullscreen insertdatetime media table emoticons',
-            'toolbar' => 'undo redo removeformat bold italic underline image link | alignjustify alignleft aligncenter alignright | fontsizeinput font_size_formats styles | numlist bullist outdent indent | forecolor backcolor fullscreen| blockquote table toc hr | media codesample emoticons | wordcount',
+            'toolbar' => 'undo redo removeformat bold italic underline image link | alignjustify alignleft aligncenter alignright | H1 H2 H3 H4 H5 H6 fontsizeinput| numlist bullist outdent indent | forecolor backcolor fullscreen| blockquote table toc hr | media codesample emoticons | wordcount',
             'upload_directory' => null,
             // | fontfamily fontsize fontsizeinput font_size_formats styles |
             'custom_configs' => [

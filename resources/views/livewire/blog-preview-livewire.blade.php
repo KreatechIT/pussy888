@@ -1,3 +1,14 @@
+@push('title')
+    {{ $blog->heading }}
+@endpush
+
+@push('meta_title')
+    {{ $blog->meta_title }}
+@endpush
+
+@push('meta_description')
+    {{ $blog->meta_description }}
+@endpush
 <div
     class="min-h-screen bg-black text-white"
     x-data="{
@@ -105,14 +116,14 @@
             <!-- Intro callout -->
             <div class="mb-6 rounded-xl border border-white/10 bg-white/[0.03] p-4">
                 <article
-                    class="prose dark:prose-invert prose-table:border prose-table:rounded prose-table:border-white/20 prose-table:p-2 prose-thead:bg-slate-400 prose-thead:border-b prose-thead:border-white/20 prose-th:border prose-th:text-white prose-th:px-4 prose-th:py-2 prose-td:px-4 prose-td:py-2 prose-td:border prose-table:w-full prose-table:table-auto prose-table:border-separate max-w-none space-y-4 text-sm leading-relaxed text-white/90"
+                    class="prose prose-invert prose-a:text-purple-300 prose-a:no-underline prose-a:hover:text-pink-400 prose-a:hover:underline prose-ul:list-disc prose-ul:!pl-6 prose-ol:list-decimal prose-ol:!pl-6 prose-ul:!whitespace-normal prose-li:!whitespace-normal max-w-none space-y-4 text-sm leading-relaxed marker:text-base marker:font-semibold marker:text-purple-400"
                 >
                     {!! $blog->content !!}
                 </article>
             </div>
 
             <!-- Share + Tags -->
-            <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
+            {{-- <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
                 <div class="flex flex-wrap items-center gap-2 text-xs">
                     <a class="rounded-full bg-white/10 px-2 py-1 text-white/70 ring-1 ring-white/10 hover:bg-white/15"
                         href="#"
@@ -128,8 +139,13 @@
                     <a class="rounded-md border border-white/10 px-2 py-1 hover:bg-white/5" href="#">Copy
                         Link</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
+    </div>
+
+    <!-- Comments -->
+    <div class="mx-auto max-w-7xl px-4 pb-12 scroll-mt-24" id="comments">
+        <livewire:blog-comment-livewire :key="'comments' . $blog->id" :$blog />
     </div>
 
     <!-- Related posts -->
