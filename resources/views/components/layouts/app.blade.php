@@ -25,9 +25,9 @@
     <link rel="canonical" href="{{ url()->current() }}" />
 
     <!-- hreflang Tags -->
-    <link rel="alternate" href="{{ route('home', ['locale' => 'en']) }}" hreflang="en" />
-    <link rel="alternate" href="{{ route('home', ['locale' => 'bm']) }}" hreflang="bm" />
-    <link rel="alternate" href="{{ route('home', ['locale' => 'zh']) }}" hreflang="zh" />
+    <link rel="alternate" href="{{ route('home', ['lang' => 'en']) }}" hreflang="en" />
+    <link rel="alternate" href="{{ route('home', ['lang' => 'bm']) }}" hreflang="bm" />
+    <link rel="alternate" href="{{ route('home', ['lang' => 'zh']) }}" hreflang="zh" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

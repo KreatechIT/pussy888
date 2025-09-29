@@ -1,5 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /search/
 
 
 Sitemap: main_url/sitemap.xml
