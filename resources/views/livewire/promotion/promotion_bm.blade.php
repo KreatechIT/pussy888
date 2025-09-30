@@ -253,9 +253,9 @@
     <x-partials.download
         title="Mula Menuntut Bonus Anda Sekarang!"
         primaryCtaText="Daftar / Log Masuk"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Lihat Promosi"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Dari tawaran selamat datang yang menarik hingga ganjaran kesetiaan, promosi Pussy888 direka untuk memaksimumkan
         potensi kemenangan anda dan meningkatkan perjalanan kasino anda. Jangan lepaskan ganjaran — log masuk sekarang

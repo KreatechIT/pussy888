@@ -165,9 +165,9 @@
     <x-partials.download
         title="Sertai Komuniti Pussy888"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main Sekarang"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Ribuan pemain Malaysia mempercayai Pussy888 setiap hari untuk hiburan permainan dalam talian mereka.
         Sama ada anda baru dalam permainan kasino atau pemain berpengalaman, Pussy888 adalah pintu masuk anda kepada

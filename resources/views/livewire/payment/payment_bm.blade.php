@@ -399,9 +399,9 @@
     <x-partials.download
         title="Deposit Sekarang & Main dengan Yakin"
         primaryCtaText="Log Masuk"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Deposit Sekarang"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         <div class="mt-1 text-sm">
             Dengan kaedah pembayaran yang selamat, pantas, dan mudah, Pussy888 memudahkan anda untuk mula bermain

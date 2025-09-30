@@ -38,9 +38,9 @@
                         数百款老虎机、高清真人荷官、流畅的移动端应用与安全支付——为马来西亚玩家而设。
                     </p>
                     <div class="mt-6 flex flex-wrap gap-3">
-                        <x-partials.button href="#">下载应用</x-partials.button>
-                        <x-partials.button type="outline" href="#">探索</x-partials.button>
-                        {{-- <a href="#"
+                        <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">下载应用</x-partials.button>
+                        <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">探索</x-partials.button>
+                        {{-- <a href="https://lv168.com/en/register?up=luckywinwin14"
                             class="rounded-md bg-amber-400 px-5 py-3 font-semibold text-black hover:bg-amber-300">Download
                             App</a>
                         <a href="#games" class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5">Explore
@@ -163,8 +163,8 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">下载 APK</x-partials.button>
-                    <x-partials.button type="outline" href="#">获取 iOS 应用</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">下载 APK</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">获取 iOS 应用</x-partials.button>
                 </div>
             </div>
         </div>
@@ -353,8 +353,8 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">立即游玩</x-partials.button>
-                    <x-partials.button type="outline" href="#">查看全部游戏</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">立即游玩</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">查看全部游戏</x-partials.button>
                 </div>
             </div>
         </div>
@@ -445,8 +445,8 @@
                     在线客服提供即时帮助，电子邮箱处理详细问题，电话适用于紧急情况。
                 </p>
                 <div class="mt-4 flex flex-wrap gap-3">
-                    <x-partials.button href="#">在线客服</x-partials.button>
-                    <x-partials.button type="outline" href="#">邮件支持</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">在线客服</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">邮件支持</x-partials.button>
                 </div>
             </div>
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
@@ -499,9 +499,9 @@
     <x-partials.download
         title="Pussy888 马来西亚——安全游玩，赢取大奖"
         primaryCtaText="下载应用"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="探索游戏"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         <div class="text-white">
             享受庞大的游戏库（包括 pokies）、丰厚红利（如 100 次免费旋转优惠）、安全支付与高效客服支持——桌面与移动端皆可畅玩。

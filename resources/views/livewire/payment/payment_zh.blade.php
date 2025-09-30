@@ -387,9 +387,9 @@
     <x-partials.download
         title="立即存款，放心畅玩"
         primaryCtaText="登录"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="马上存款"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         <div class="mt-1 text-sm">
             通过安全、快捷、便捷的支付方式，Pussy888 让您无忧开启喜爱的游戏。

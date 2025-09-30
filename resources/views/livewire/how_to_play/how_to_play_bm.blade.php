@@ -339,9 +339,9 @@
     <x-partials.download
         title="Mula Bermain Hari Ini!"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main di Web"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Sekarang anda sudah tahu cara bermain Pussy888, masa untuk mula! Muat turun aplikasi, tuntut bonus anda, dan
         mula

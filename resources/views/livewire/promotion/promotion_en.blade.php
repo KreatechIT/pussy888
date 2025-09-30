@@ -259,9 +259,9 @@
     <x-partials.download
         title="Start Claiming Your Bonuses Now!"
         primaryCtaText="Register / Log In"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="View Promotions"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         From exciting welcome offers to rewarding loyalty benefits, Pussy888 promotions are designed to maximize your
         winning potential and enhance your overall casino journey. Don’t leave rewards on the table — log in now and

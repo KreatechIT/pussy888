@@ -327,9 +327,9 @@
     <x-partials.download
         title="Start Playing Today!"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play on Web"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Now that you know how to play Pussy888, it’s time to jump in! Download the app, claim your bonus, and start
         spinning, betting, and winning.

@@ -106,7 +106,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：百家乐</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入桌台</a>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：二十一点</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入桌台</a>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：轮盘</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入桌台</a>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：龙虎</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入桌台</a>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：骰宝</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入桌台</a>
                 </div>
             </div>
@@ -235,7 +235,7 @@
                     <!-- Actions as feature list -->
                     <div class="mt-5 grid gap-3">
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -255,7 +255,7 @@
                             </div>
                         </a>
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -273,7 +273,7 @@
                             </div>
                         </a>
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -504,9 +504,9 @@
     <x-partials.download
         title="立即开玩真人桌台！"
         primaryCtaText="下载 Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="登录并加入桌台"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Pussy888 真人赌场是马来西亚实时真人娱乐的终极去处。
         专业荷官、精彩游戏与值得信赖的平台——现在就下载或登录，加入真人桌台，开启前所未有的体验！

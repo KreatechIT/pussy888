@@ -316,9 +316,9 @@
     <x-partials.download
         title="Mula Bermain dengan Lebih Bijak"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main di Web"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Dengan panduan permainan Pussy888 ini, anda bukan sekadar berputar atau bertaruh — anda membuat keputusan yang
         bermaklumat.

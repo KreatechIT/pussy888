@@ -29,23 +29,17 @@
                 <div class="scroll-smooth">
                     <div class="mt-3 grid gap-2 sm:grid-cols-2">
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#slot-games"
-                        >Slot Games</a>
+                            href="#slot-games">Slot Games</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#live-casino"
-                        >Live Casino</a>
+                            href="#live-casino">Live Casino</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#table-games"
-                        >Table Games</a>
+                            href="#table-games">Table Games</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#jackpot-games"
-                        >Jackpot Games</a>
+                            href="#jackpot-games">Jackpot Games</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#mobile-desktop"
-                        >Mobile/Desktop</a>
+                            href="#mobile-desktop">Mobile/Desktop</a>
                         <a class="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#fair-safe"
-                        >Fair & Safe</a>
+                            href="#fair-safe">Fair & Safe</a>
                     </div>
                 </div>
             </div>
@@ -60,11 +54,8 @@
                 <div class="mt-1 text-sm text-white/70">Hundreds of titles with free spins, multipliers & jackpots.
                 </div>
                 <div class="mt-4">
-                    <a
-                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('slot', [app()->getLocale()]) }}"
-                        wire:navigate.hover
-                    >Explore →
+                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('slot', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -72,11 +63,8 @@
                 <div class="text-lg font-semibold">Live Casino</div>
                 <div class="mt-1 text-sm text-white/70">HD streams & pro dealers: Baccarat, Roulette, Blackjack.</div>
                 <div class="mt-4">
-                    <a
-                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('live-casino', [app()->getLocale()]) }}"
-                        wire:navigate.hover
-                    >Explore →
+                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('live-casino', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -84,11 +72,8 @@
                 <div class="text-lg font-semibold">Table Games</div>
                 <div class="mt-1 text-sm text-white/70">Strategy classics with smooth controls & fair RNG.</div>
                 <div class="mt-4">
-                    <a
-                        class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="{{ route('table-games', [app()->getLocale()]) }}"
-                        wire:navigate.hover
-                    >Explore →
+                    <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
+                        href="{{ route('table-games', [app()->getLocale()]) }}" wire:navigate.hover>Explore →
                     </a>
                 </div>
             </div>
@@ -97,8 +82,7 @@
                 <div class="mt-1 text-sm text-white/70">Progressive pots that grow with every spin.</div>
                 <div class="mt-4">
                     <a class="inline-flex items-center gap-1 text-sm text-purple-300 hover:underline"
-                        href="#jackpot-games"
-                    >Explore →
+                        href="#jackpot-games">Explore →
                     </a>
                 </div>
             </div>
@@ -155,14 +139,15 @@
                         @foreach ([['title' => 'Safari Heat', 'image' => 'slots/safari-heat.jpg'], ['title' => 'Great Blue', 'image' => 'slots/great-blue.jpg'], ['title' => 'Panther Moon', 'image' => 'slots/panther-moon.jpg'], ['title' => 'Highway Kings', 'image' => 'slots/highway-kings.jpg'], ['title' => 'Bonus Bear', 'image' => 'slots/bonus-bear.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -203,14 +188,15 @@
                         @foreach ([['title' => 'Live Baccarat', 'image' => 'live_casino/baccarat.jpg'], ['title' => 'Live Blackjack', 'image' => 'live_casino/blackjack.jpg'], ['title' => 'Live Roulette', 'image' => 'live_casino/roulette.jpg'], ['title' => 'Sic Bo', 'image' => 'live_casino/sic-bo.jpg'], ['title' => 'Dragon Tiger', 'image' => 'live_casino/dragon-tiger.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -285,15 +271,15 @@
                         @foreach ([['title' => 'Blackjack', 'image' => 'table_games/blackjack.png'], ['title' => 'Roulette', 'image' => 'table_games/roulette.png'], ['title' => 'Poker', 'image' => 'table_games/baccarat.png'], ['title' => 'Sic Bo', 'image' => 'table_games/sicbo.png'], ['title' => 'Three Card Brag', 'image' => 'table_games/dragontiger.png']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div
-                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                 <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -327,15 +313,15 @@
                         @foreach ([['title' => 'Great Blue Jackpot', 'image' => 'jackpots/great-blue.jpg'], ['title' => 'Safari Heat Jackpot', 'image' => 'jackpots/safari-heat.jpg'], ['title' => 'Panther Moon Jackpot', 'image' => 'jackpots/panther-moon.jpg'], ['title' => 'Highway Kings Progressive', 'image' => 'jackpots/highway-kings.jpg'], ['title' => 'Bonus Bear Jackpot', 'image' => 'jackpots/bonus-bear.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div
-                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -425,13 +411,9 @@
     </div>
 
     <!-- CTA Banner -->
-    <x-partials.download
-        title="Start Playing Today!"
-        primaryCtaText="Download Pussy888"
-        primaryCtaLink="#"
-        secondaryCtaText="Browse All Games"
-        secondaryCtaLink="#"
-    >
+    <x-partials.download title="Start Playing Today!" primaryCtaText="Download Pussy888"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14" secondaryCtaText="Browse All Games"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14">
         Explore the full Pussy888 game list and discover why we're one of
         Malaysia’s favorite online
         casinos.

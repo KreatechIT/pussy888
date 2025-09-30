@@ -41,9 +41,9 @@
                         untuk pemain Malaysia.
                     </p>
                     <div class="mt-6 flex flex-wrap gap-3">
-                        <x-partials.button href="#">Muat Turun Aplikasi</x-partials.button>
-                        <x-partials.button type="outline" href="#">Terokai</x-partials.button>
-                        {{-- <a href="#"
+                        <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Muat Turun Aplikasi</x-partials.button>
+                        <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Terokai</x-partials.button>
+                        {{-- <a href="https://lv168.com/en/register?up=luckywinwin14"
                             class="rounded-md bg-amber-400 px-5 py-3 font-semibold text-black hover:bg-amber-300">Muat Turun
                             Aplikasi</a>
                         <a href="#games" class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5">Terokai
@@ -172,9 +172,9 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">Muat Turun
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Muat Turun
                         APK</x-partials.button>
-                    <x-partials.button type="outline" href="#">Dapatkan Aplikasi
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Dapatkan Aplikasi
                         iOS</x-partials.button>
                 </div>
             </div>
@@ -366,8 +366,8 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">Main Sekarang</x-partials.button>
-                    <x-partials.button type="outline" href="#">Lihat Semua Permainan</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Main Sekarang</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Lihat Semua Permainan</x-partials.button>
                 </div>
             </div>
         </div>
@@ -464,8 +464,8 @@
                     mendesak.
                 </p>
                 <div class="mt-4 flex flex-wrap gap-3">
-                    <x-partials.button href="#">Sembang Langsung</x-partials.button>
-                    <x-partials.button type="outline" href="#">Sokongan E-mel</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Sembang Langsung</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Sokongan E-mel</x-partials.button>
                 </div>
             </div>
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
@@ -523,9 +523,9 @@
     <x-partials.download
         title="Pussy888 Malaysia – Bermain dengan Selamat, Menang Besar"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Terokai Permainan"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         <div class="text-white">
             Nikmati perpustakaan permainan yang besar (termasuk pokies), bonus murah hati (seperti tawaran

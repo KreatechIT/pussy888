@@ -176,9 +176,9 @@
     <x-partials.download
         title="Play Safe, Play Smart"
         primaryCtaText="Contact Support"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Set Account Limits"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         At Pussy888, your well-being comes first. Use our tools, follow the tips above, and keep control of your time
         and budget.

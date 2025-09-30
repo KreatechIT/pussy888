@@ -58,7 +58,7 @@
                 <div class="text-sm text-white/70">选择你的最爱，立即加入。</div>
             </div>
             <a class="hidden rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 sm:inline-flex"
-                href="#"
+                href="https://lv168.com/en/register?up=luckywinwin14"
             >查看所有牌桌</a>
         </div>
 
@@ -83,9 +83,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">玩法说明 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">玩法说明 →</a>
                     </div>
                 </div>
             </div>
@@ -110,9 +110,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">投注指南 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">投注指南 →</a>
                     </div>
                 </div>
             </div>
@@ -137,9 +137,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">规则与赔率 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">规则与赔率 →</a>
                     </div>
                 </div>
             </div>
@@ -164,9 +164,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">投注类型 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">投注类型 →</a>
                     </div>
                 </div>
             </div>
@@ -191,9 +191,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">游戏概览 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">游戏概览 →</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
 
         <div class="mt-4 sm:hidden">
             <a class="inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-                href="#">查看所有牌桌</a>
+                href="https://lv168.com/en/register?up=luckywinwin14">查看所有牌桌</a>
         </div>
     </div>
 
@@ -323,9 +323,9 @@
                 </p>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a class="rounded-md bg-purple-400 px-5 py-3 font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >进入真人娱乐场</a>
-                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="#">了解更多</a>
+                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">了解更多</a>
                 </div>
             </div>
             <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]">
@@ -341,9 +341,9 @@
     <x-partials.download
         title="立即开始畅玩！"
         primaryCtaText="下载应用"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="立即游戏"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         没找到你的问题？欢迎随时联系 Pussy888 客服——我们随时准备为你服务。
         <div class="mt-3">

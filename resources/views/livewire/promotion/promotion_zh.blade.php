@@ -243,9 +243,9 @@
     <x-partials.download
         title="立即领取您的奖金！"
         primaryCtaText="注册 / 登录"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="查看优惠"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         从丰厚的欢迎奖励到忠诚回馈，Pussy888 的优惠旨在最大化您的获胜潜力并提升您的赌场之旅。不要错过奖励 — 立即登录并开始领取您的奖金！
         <div class="mt-3">

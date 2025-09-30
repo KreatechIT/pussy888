@@ -102,9 +102,9 @@
                     </div>
                     <div class="flex items-center justify-between p-3">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Butiran →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Butiran →</a>
                     </div>
                 </div>
             @endforeach
@@ -151,11 +151,11 @@
                 </div>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a class="rounded-md bg-purple-400 px-4 py-2 font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Muat Turun APK</a>
-                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="#">Dapatkan
+                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">Dapatkan
                         iOS</a>
-                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="#">Main dalam
+                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">Main dalam
                         Pelayar</a>
                 </div>
             </div>
@@ -203,7 +203,7 @@
             </div>
             <div class="mt-4">
                 <a class="inline-flex items-center gap-2 rounded-md bg-purple-400 px-4 py-2 font-semibold text-black hover:bg-purple-300"
-                    href="#"
+                    href="https://lv168.com/en/register?up=luckywinwin14"
                 >
                     Lihat Promosi →
                 </a>
@@ -248,9 +248,9 @@
     <x-partials.download
         title="Mula Berputar Untuk Jackpot Sekarang!"
         primaryCtaText="Muat Turun Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main Sekarang"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Keseronokan kemenangan hanya satu sentuhan sahaja. Sertai ribuan pemain di seluruh Malaysia yang sedang berputar
         menuju kekayaan dengan jackpot Pussy888.

@@ -120,7 +120,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Bakarat</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk Meja</a>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Blackjack</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk Meja</a>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Rolet</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk Meja</a>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Naga Harimau</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk Meja</a>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Sic Bo</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk Meja</a>
                 </div>
             </div>
@@ -262,7 +262,7 @@
                     <!-- Actions as feature list -->
                     <div class="mt-5 grid gap-3">
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -282,7 +282,7 @@
                             </div>
                         </a>
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -300,7 +300,7 @@
                             </div>
                         </a>
                         <a class="group rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:bg-pink-400/10 hover:text-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >
                             <div class="flex items-center gap-3">
                                 <div class="rounded-lg bg-white/10 p-2 ring-1 ring-inset ring-white/15">
@@ -538,9 +538,9 @@
     <x-partials.download
         title="Mula Bermain Secara Langsung Sekarang!"
         primaryCtaText="Muat Turun Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Log Masuk & Sertai Meja"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Kasino langsung Pussy888 adalah destinasi utama hiburan masa nyata dengan dealer sebenar di Malaysia.
         Dengan dealer profesional, permainan mengujakan dan platform dipercayai, sudah tiba masanya untuk meningkatkan

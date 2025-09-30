@@ -205,9 +205,9 @@
     <x-partials.download
         title="Mula Bermain Hari Ini!"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main Sekarang"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Tidak jumpa jawapan anda di sini? Hubungi sokongan pelanggan Pussy888 pada bila-bila masa — kami sentiasa
         bersedia membantu.

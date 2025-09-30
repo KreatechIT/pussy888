@@ -302,9 +302,9 @@
     <x-partials.download
         title="Start Playing Smarter"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play on Web"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         With these Pussy888 game guides, you’re no longer just spinning or betting — you're making informed decisions.
             Learn the rules, master the strategies, and enjoy your casino experience to the fullest.

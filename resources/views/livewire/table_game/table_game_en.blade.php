@@ -63,7 +63,7 @@
                 <div class="text-sm text-white/70">Choose your favorite and jump in.</div>
             </div>
             <a class="hidden rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 sm:inline-flex"
-                href="#"
+                href="https://lv168.com/en/register?up=luckywinwin14"
             >View All Tables</a>
         </div>
 
@@ -89,9 +89,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Play Now</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">How it works →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">How it works →</a>
                     </div>
                 </div>
             </div>
@@ -117,9 +117,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Play Now</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Betting guide →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Betting guide →</a>
                     </div>
                 </div>
             </div>
@@ -144,9 +144,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Play Now</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Rules & payouts →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Rules & payouts →</a>
                     </div>
                 </div>
             </div>
@@ -171,9 +171,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Play Now</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Bet types →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Bet types →</a>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Play Now</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Game overview →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Game overview →</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
 
         <div class="mt-4 sm:hidden">
             <a class="inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-                href="#">View All Tables</a>
+                href="https://lv168.com/en/register?up=luckywinwin14">View All Tables</a>
         </div>
     </div>
 
@@ -333,9 +333,9 @@
                 </p>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a class="rounded-md bg-purple-400 px-5 py-3 font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Enter Live Casino</a>
-                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="#">Learn
+                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">Learn
                         More</a>
                 </div>
             </div>
@@ -352,9 +352,9 @@
     <x-partials.download
         title="Start Playing Today!"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play Now"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Didn’t find your question here? Contact our Pussy888 customer support anytime—we’re always
         ready to help.

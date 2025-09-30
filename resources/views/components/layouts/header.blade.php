@@ -166,10 +166,10 @@
             <div class="hidden items-center gap-3 md:flex">
                 <x-partials.button
                     type="outline"
-                    href="#"
+                    href="https://lv168.com/en/register?up=luckywinwin14"
                     wire:navigate.hover
                 >Login</x-partials.button>
-                <x-partials.button href="#" wire:navigate.hover>Register</x-partials.button>
+                <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14" wire:navigate.hover>Register</x-partials.button>
             </div>
 
             <!-- Mobile Menu Button -->

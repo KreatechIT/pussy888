@@ -157,14 +157,15 @@
                         @foreach ([['title' => 'Safari Heat', 'image' => 'slots/safari-heat.jpg'], ['title' => 'Great Blue', 'image' => 'slots/great-blue.jpg'], ['title' => 'Panther Moon', 'image' => 'slots/panther-moon.jpg'], ['title' => 'Highway Kings', 'image' => 'slots/highway-kings.jpg'], ['title' => 'Bonus Bear', 'image' => 'slots/bonus-bear.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                 <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -203,14 +204,15 @@
                         @foreach ([['title' => 'Live Baccarat', 'image' => 'live_casino/baccarat.jpg'], ['title' => 'Live Blackjack', 'image' => 'live_casino/blackjack.jpg'], ['title' => 'Live Roulette', 'image' => 'live_casino/roulette.jpg'], ['title' => 'Sic Bo', 'image' => 'live_casino/sic-bo.jpg'], ['title' => 'Dragon Tiger', 'image' => 'live_casino/dragon-tiger.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                 <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -286,15 +288,15 @@
                         @foreach ([['title' => 'Blackjack', 'image' => 'table_games/blackjack.png'], ['title' => 'Roulette', 'image' => 'table_games/roulette.png'], ['title' => 'Poker', 'image' => 'table_games/baccarat.png'], ['title' => 'Sic Bo', 'image' => 'table_games/sicbo.png'], ['title' => 'Three Card Brag', 'image' => 'table_games/dragontiger.png']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div
-                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                 <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -330,15 +332,15 @@
                         @foreach ([['title' => 'Great Blue Jackpot', 'image' => 'jackpots/great-blue.jpg'], ['title' => 'Safari Heat Jackpot', 'image' => 'jackpots/safari-heat.jpg'], ['title' => 'Panther Moon Jackpot', 'image' => 'jackpots/panther-moon.jpg'], ['title' => 'Highway Kings Progressive', 'image' => 'jackpots/highway-kings.jpg'], ['title' => 'Bonus Bear Jackpot', 'image' => 'jackpots/bonus-bear.jpg']] as $slot)
                             <div
                                 class="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                <img
-                                    class="h-24 w-full object-cover"
-                                    src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
-                                    alt="{{ $slot['title'] }}"
-                                >
-                                <div
-                                    class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
-                                    {{ $slot['title'] }}
-                                </div>
+                                 <a href="https://lv168.com/en/register?up=luckywinwin14">
+                                    <img class="h-24 w-full object-cover"
+                                        src="{{ asset('assets/frontend/images/' . $slot['image']) }}"
+                                        alt="{{ $slot['title'] }}">
+                                    <div
+                                        class="p-2 text-center text-sm font-medium text-white group-hover:text-purple-400">
+                                        {{ $slot['title'] }}
+                                    </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -435,9 +437,9 @@
     <x-partials.download
         title="Mula Bermain Hari Ini!"
         primaryCtaText="Muat Turun Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Lihat Semua Permainan"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Terokai senarai penuh permainan Pussy888 dan ketahui mengapa kami antara
         kasino dalam talian kegemaran di Malaysia.

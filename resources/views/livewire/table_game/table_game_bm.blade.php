@@ -64,7 +64,7 @@
                 <div class="text-sm text-white/70">Pilih kegemaran anda dan mula bermain.</div>
             </div>
             <a class="hidden rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 sm:inline-flex"
-                href="#"
+                href="https://lv168.com/en/register?up=luckywinwin14"
             >Lihat Semua Meja</a>
         </div>
 
@@ -90,9 +90,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Cara bermain →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Cara bermain →</a>
                     </div>
                 </div>
             </div>
@@ -117,9 +117,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Panduan pertaruhan →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Panduan pertaruhan →</a>
                     </div>
                 </div>
             </div>
@@ -144,9 +144,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Peraturan & pembayaran →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Peraturan & pembayaran →</a>
                     </div>
                 </div>
             </div>
@@ -172,9 +172,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Jenis pertaruhan →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Jenis pertaruhan →</a>
                     </div>
                 </div>
             </div>
@@ -199,9 +199,9 @@
                     </p>
                     <div class="mt-4 flex items-center gap-2">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >Main Sekarang</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">Gambaran permainan →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">Gambaran permainan →</a>
                     </div>
                 </div>
             </div>
@@ -209,7 +209,7 @@
 
         <div class="mt-4 sm:hidden">
             <a class="inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-                href="#">Lihat Semua Meja</a>
+                href="https://lv168.com/en/register?up=luckywinwin14">Lihat Semua Meja</a>
         </div>
     </div>
 
@@ -336,9 +336,9 @@
                 </p>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a class="rounded-md bg-purple-400 px-5 py-3 font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Masuk ke Kasino Langsung</a>
-                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="#">Ketahui
+                    <a class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">Ketahui
                         Lagi</a>
                 </div>
             </div>
@@ -355,9 +355,9 @@
     <x-partials.download
         title="Mula Bermain Hari Ini!"
         primaryCtaText="Muat Turun Aplikasi"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main Sekarang"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Tidak jumpa soalan anda di sini? Hubungi sokongan pelanggan Pussy888 pada bila-bila masa — kami sentiasa
         sedia membantu.

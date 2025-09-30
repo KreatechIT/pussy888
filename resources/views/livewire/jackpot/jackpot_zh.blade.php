@@ -92,9 +92,9 @@
                     </div>
                     <div class="flex items-center justify-between p-3">
                         <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                            href="#"
+                            href="https://lv168.com/en/register?up=luckywinwin14"
                         >立即游戏</a>
-                        <a class="text-sm text-white/70 hover:text-white" href="#">详情 →</a>
+                        <a class="text-sm text-white/70 hover:text-white" href="https://lv168.com/en/register?up=luckywinwin14">详情 →</a>
                     </div>
                 </div>
             @endforeach
@@ -138,10 +138,10 @@
                 </div>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a class="rounded-md bg-purple-400 px-4 py-2 font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >下载 APK</a>
-                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="#">获取 iOS</a>
-                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="#">浏览器畅玩</a>
+                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">获取 iOS</a>
+                    <a class="rounded-md border border-white/15 px-4 py-2 hover:bg-white/5" href="https://lv168.com/en/register?up=luckywinwin14">浏览器畅玩</a>
                 </div>
             </div>
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
@@ -187,7 +187,7 @@
             </div>
             <div class="mt-4">
                 <a class="inline-flex items-center gap-2 rounded-md bg-purple-400 px-4 py-2 font-semibold text-black hover:bg-purple-300"
-                    href="#"
+                    href="https://lv168.com/en/register?up=luckywinwin14"
                 >
                     查看优惠 →
                 </a>
@@ -232,9 +232,9 @@
     <x-partials.download
         title="立即开始转动赢大奖！"
         primaryCtaText="下载 Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="立即游戏"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         胜利的快感只需轻轻一点。加入马来西亚成千上万的玩家，和 Pussy888 一起旋转走向财富。
         <div class="mt-3">

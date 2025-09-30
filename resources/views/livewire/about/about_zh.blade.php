@@ -141,9 +141,9 @@
     <x-partials.download
         title="加入 Pussy888 社区"
         primaryCtaText="下载应用"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="立即游戏"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         每天都有成千上万的马来西亚玩家信任 Pussy888 来获得他们的在线游戏娱乐。无论您是赌场新手还是资深玩家，Pussy888 都是您通往高级老虎机、真人娱乐场桌和真实奖励的门户——一切都来自您设备的安全保障。
         <div class="mt-3">

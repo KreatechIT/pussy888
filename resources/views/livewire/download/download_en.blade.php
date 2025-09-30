@@ -291,9 +291,9 @@
     <x-partials.download
         title="Start Playing Now!"
         primaryCtaText="Android APK"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="iOS Install"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Choose the method that works best for you: Download the APK for Android, install the iOS app, or play
         instantly via mobile browser.

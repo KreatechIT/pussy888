@@ -294,9 +294,9 @@
     <x-partials.download
         title="Mula Bermain Sekarang!"
         primaryCtaText="APK Android"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Pasang iOS"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
             Pilih kaedah yang paling sesuai untuk anda: Muat turun APK untuk Android, pasang aplikasi iOS, atau bermain
             serta-merta melalui pelayar mudah alih.

@@ -197,9 +197,9 @@
     <x-partials.download
         title="立即开始游戏！"
         primaryCtaText="下载应用"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="马上玩"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         在这里没有找到您的问题？随时联系 Pussy888 客户支持 — 我们全天候为您提供帮助。
         <div class="mt-3">

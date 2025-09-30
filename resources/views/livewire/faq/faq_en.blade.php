@@ -205,9 +205,9 @@
     <x-partials.download
         title="Start Playing Today!"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play Now"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Didn’t find your question here? Contact our Pussy888 customer support anytime—we’re always
         ready to help.

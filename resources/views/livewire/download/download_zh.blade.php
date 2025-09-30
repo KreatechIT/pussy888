@@ -274,9 +274,9 @@
     <x-partials.download
         title="立即开始游戏！"
         primaryCtaText="Android APK"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="iOS 安装"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         选择最适合您的方式：下载 Android APK、安装 iOS 应用，或直接通过手机浏览器即时畅玩。
         无论您选择哪一种，Pussy888 都将带来顶级的在线赌场体验。

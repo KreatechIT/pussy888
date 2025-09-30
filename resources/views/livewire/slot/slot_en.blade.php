@@ -148,7 +148,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Video 5-Reel</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
                 </div>
             </div>
 
@@ -164,7 +164,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Classic 3-Reel</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
                 </div>
             </div>
 
@@ -180,7 +180,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Video 5-Reel</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300">Play</a>
                 </div>
             </div>
 
@@ -196,7 +196,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Video 5-Reel</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Video 5-Reel</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
                 </div>
                 <div class="p-3 flex items-center justify-between">
                     <div class="text-xs text-white/60">Category: Progressive Jackpots</div>
-                    <a href="#" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
+                    <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300">Play</a>
                 </div>
             </div>
         </div>
@@ -259,15 +259,15 @@
                 on Android or iOS.
             </p>
             <div class="mt-4 grid md:grid-cols-3 gap-3">
-                <a href="#" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
+                <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
                     <div class="font-semibold">Download the Pussy888 APK (Android)</div>
                     <div class="text-sm text-white/70">Quick install & instant access.</div>
                 </a>
-                <a href="#" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
+                <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
                     <div class="font-semibold">Install on iPhone/iPad (iOS)</div>
                     <div class="text-sm text-white/70">Optimized for iOS performance.</div>
                 </a>
-                <a href="#" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
+                <a href="https://lv168.com/en/register?up=luckywinwin14" class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]">
                     <div class="font-semibold">Play in Mobile Browser</div>
                     <div class="text-sm text-white/70">No download needed—tap & spin.</div>
                 </a>
@@ -333,7 +333,7 @@
                     <div class="text-sm text-white/70">Perks for loyal players.</div>
                 </div>
             </div>
-            <a href="#" class="mt-4 inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5">View Promotions</a>
+            <a href="https://lv168.com/en/register?up=luckywinwin14" class="mt-4 inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5">View Promotions</a>
         </div>
     </div>
 
@@ -341,9 +341,9 @@
     <x-partials.download
         title="Spin Now & Win Big!"
         primaryCtaText="Download Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play in Browser"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Thousands of Malaysian players already enjoy the thrill of Pussy888 slots—top-tier graphics, fast
                     payouts, and games for every style. Download now and start spinning your way to real rewards!

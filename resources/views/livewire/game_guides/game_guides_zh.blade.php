@@ -305,9 +305,9 @@
     <x-partials.download
         title="更聪明地开始游戏"
         primaryCtaText="下载 App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="网页端畅玩"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         有了这些 Pussy888 游戏指南，你不再只是旋转或下注——而是在做有依据的决定。
         掌握规则、精通策略，尽情享受你的赌场之旅。

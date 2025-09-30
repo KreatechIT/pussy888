@@ -198,7 +198,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Video 5-Gulung</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Klasik 3-Gulung</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -246,7 +246,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Video 5-Gulung</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -271,7 +271,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Video 5-Gulung</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -295,7 +295,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Video 5-Gulung</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">Kategori: Jackpot Progresif</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >Main</a>
                 </div>
             </div>
@@ -354,15 +354,15 @@
                 di Android atau iOS.
             </p>
             <div class="mt-4 grid gap-3 md:grid-cols-3">
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">Muat Turun APK Pussy888 (Android)</div>
                     <div class="text-sm text-white/70">Pemasangan pantas & akses segera.</div>
                 </a>
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">Pasang pada iPhone/iPad (iOS)</div>
                     <div class="text-sm text-white/70">Dioptimumkan untuk prestasi iOS.</div>
                 </a>
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">Main dalam Pelayar Mudah Alih</div>
                     <div class="text-sm text-white/70">Tiada muat turun — ketik & putar.</div>
                 </a>
@@ -429,7 +429,7 @@
                 </div>
             </div>
             <a class="mt-4 inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-                href="#"
+                href="https://lv168.com/en/register?up=luckywinwin14"
             >Lihat Promosi</a>
         </div>
     </div>
@@ -438,9 +438,9 @@
     <x-partials.download
         title="Putar Sekarang & Menang Besar!"
         primaryCtaText="Muat Turun Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Main di Pelayar"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Ribuan pemain Malaysia sudah menikmati keseronokan slot Pussy888 — grafik bertaraf tinggi, pembayaran pantas,
         dan permainan untuk setiap gaya. Muat turun sekarang dan mula memutar untuk ganjaran sebenar!

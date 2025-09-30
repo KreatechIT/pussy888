@@ -181,9 +181,9 @@
     <x-partials.download
         title="Main Bijak, Kekal Selamat"
         primaryCtaText="Hubungi Sokongan"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Tetapkan Had Akaun"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Di Pussy888, kebajikan anda diutamakan. Gunakan alat kami, ikut tip di atas, dan kawal masa serta bajet anda.
         <br><br>

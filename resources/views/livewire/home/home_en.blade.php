@@ -40,10 +40,10 @@
                         players.
                     </p>
                     <div class="mt-6 flex flex-wrap gap-3">
-                        <x-partials.button href="#">Download
+                        <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Download
                             App</x-partials.button>
-                        <x-partials.button type="outline" href="#">Explore</x-partials.button>
-                        {{-- <a href="#"
+                        <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Explore</x-partials.button>
+                        {{-- <a href="https://lv168.com/en/register?up=luckywinwin14"
                             class="rounded-md bg-amber-400 px-5 py-3 font-semibold text-black hover:bg-amber-300">Download
                             App</a>
                         <a href="#games" class="rounded-md border border-white/15 px-5 py-3 hover:bg-white/5">Explore
@@ -171,9 +171,9 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">Download
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Download
                         APK</x-partials.button>
-                    <x-partials.button type="outline" href="#">Get iOS
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Get iOS
                         App</x-partials.button>
                 </div>
             </div>
@@ -364,8 +364,8 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <x-partials.button href="#">Play Now</x-partials.button>
-                    <x-partials.button type="outline" href="#">View All Games</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Play Now</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">View All Games</x-partials.button>
                 </div>
             </div>
         </div>
@@ -460,8 +460,8 @@
                     Live chat for instant help, email for detailed queries, and phone for urgent cases.
                 </p>
                 <div class="mt-4 flex flex-wrap gap-3">
-                    <x-partials.button href="#">Live Chat</x-partials.button>
-                    <x-partials.button type="outline" href="#">Email Support</x-partials.button>
+                    <x-partials.button href="https://lv168.com/en/register?up=luckywinwin14">Live Chat</x-partials.button>
+                    <x-partials.button type="outline" href="https://lv168.com/en/register?up=luckywinwin14">Email Support</x-partials.button>
                 </div>
             </div>
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
@@ -516,9 +516,9 @@
     <x-partials.download
         title="Pussy888 Malaysia – Play Safely, Win Big"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Explore Games"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         <div class="text-white">
             Enjoy a huge game library (including pokies), generous bonuses (like the 100 free spins offer),

@@ -191,7 +191,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：视频五轴</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：经典三轴</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -239,7 +239,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：视频五轴</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -263,7 +263,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：视频五轴</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -287,7 +287,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：视频五轴</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -311,7 +311,7 @@
                 <div class="flex items-center justify-between p-3">
                     <div class="text-xs text-white/60">类别：累积大奖</div>
                     <a class="rounded-md bg-purple-400 px-3 py-1.5 text-sm font-semibold text-black hover:bg-purple-300"
-                        href="#"
+                        href="https://lv168.com/en/register?up=luckywinwin14"
                     >开始</a>
                 </div>
             </div>
@@ -341,15 +341,15 @@
                 所有老虎机完全兼容 Pussy888 手机应用与浏览器版本。无论 Android 或 iOS，都能享受顺畅转动体验。
             </p>
             <div class="mt-4 grid gap-3 md:grid-cols-3">
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">下载 Pussy888 APK（Android）</div>
                     <div class="text-sm text-white/70">快速安装，立即畅玩。</div>
                 </a>
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">在 iPhone/iPad 安装（iOS）</div>
                     <div class="text-sm text-white/70">针对 iOS 优化表现。</div>
                 </a>
-                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="#">
+                <a class="rounded-lg border border-white/15 bg-white/[0.02] p-4 hover:bg-white/[0.05]" href="https://lv168.com/en/register?up=luckywinwin14">
                     <div class="font-semibold">手机浏览器畅玩</div>
                     <div class="text-sm text-white/70">无需下载——点击即玩。</div>
                 </a>
@@ -415,7 +415,7 @@
                 </div>
             </div>
             <a class="mt-4 inline-flex rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-                href="#"
+                href="https://lv168.com/en/register?up=luckywinwin14"
             >查看优惠</a>
         </div>
     </div>
@@ -424,9 +424,9 @@
     <x-partials.download
         title="立即转动，赢取大奖！"
         primaryCtaText="下载 Pussy888"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="网页畅玩"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         数以千计的马来西亚玩家已在 Pussy888 老虎机中尽享激情——顶级画面、快速支付，以及适合各种风格的游戏。
         立即下载，开启您的真实奖励之旅！

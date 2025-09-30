@@ -309,9 +309,9 @@
     <x-partials.download
         title="今天就开始畅玩！"
         primaryCtaText="下载应用"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="网页版游玩"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         现在你已经了解如何玩 Pussy888，是时候入场了！下载应用，领取你的奖金，开始旋转、下注并赢取奖励。
         立即注册，加入成千上万每天都在畅玩真钱赌场的马来西亚玩家行列！

@@ -176,9 +176,9 @@
     <x-partials.download
         title="Join the Pussy888 Community"
         primaryCtaText="Download App"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="Play Now"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         Thousands of Malaysian players trust Pussy888 every day for their online gaming entertainment.
         Whether you're new to casino games or a seasoned player, Pussy888 is your gateway to premium slots,

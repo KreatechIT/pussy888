@@ -157,9 +157,9 @@
     <x-partials.download
         title="理性游戏，安全第一"
         primaryCtaText="联系客服"
-        primaryCtaLink="#"
+        primaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
         secondaryCtaText="设置账户限额"
-        secondaryCtaLink="#"
+        secondaryCtaLink="https://lv168.com/en/register?up=luckywinwin14"
     >
         在 Pussy888，您的福祉最为重要。使用我们的工具，遵循上述提示，合理安排时间与预算。
         <br><br>

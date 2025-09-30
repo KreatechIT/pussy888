@@ -55,7 +55,7 @@
                 <div class="text-sm text-white/70">Latest tips, how-tos, and platform updates.</div>
             </div>
             <a class="rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 sm:inline-flex"
-                href="#"
+                href="{{route('blog')}}"
             >
                 View All
             </a>
