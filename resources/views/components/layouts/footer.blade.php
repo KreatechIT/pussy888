@@ -3,7 +3,7 @@
     <div class="mx-auto grid max-w-7xl gap-6 px-4 py-10 md:grid-cols-4">
         <div class="space-y-3">
             <div class="flex items-center gap-2">
-                <a href="{{ route('home') }}" wire:navigate.hover><img
+                <a href="{{ route('home') }}"><img
                         class="h-20 w-auto"
                         src="{{ asset('assets/frontend/images/logo.png') }}"
                         alt=""
@@ -19,22 +19,22 @@
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('about-us') }}"
-                    wire:navigate.hover
+                   
                 >About Us</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('promotions') }}"
-                    wire:navigate.hover
+                   
                 >Promotions</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('blog') }}"
-                    wire:navigate.hover
+                   
                 >Blog</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('faq') }}"
-                    wire:navigate.hover
+                   
                 >FAQ</a>
             </div>
         </div>
@@ -44,22 +44,22 @@
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('slot') }}"
-                    wire:navigate.hover
+                   
                 >Slots</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('live-casino') }}"
-                    wire:navigate.hover
+                   
                 >Live Casino</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('live-casino') }}"
-                    wire:navigate.hover
+                   
                 >Table Games</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('live-casino') }}"
-                    wire:navigate.hover
+                   
                 >Jackpots</a>
             </div>
         </div>
@@ -69,17 +69,17 @@
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('terms-and-conditions') }}"
-                    wire:navigate.hover
+                   
                 >Terms & Conditions</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('privacy-policy') }}"
-                    wire:navigate.hover
+                   
                 >Privacy Policy</a>
                 <a
                     class="block hover:text-purple-300"
                     href="{{ route('responsible-gaming') }}"
-                    wire:navigate.hover
+                   
                 >Responsible Gaming</a>
             </div>
         </div>

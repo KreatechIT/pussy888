@@ -53,11 +53,6 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->navigationItems([
-                NavigationItem::make('Back To Home')
-                    ->icon('heroicon-o-home')
-                    ->url(fn (): string => route('home', [app()->getLocale()]), shouldOpenInNewTab: true),
-            ])
             ->resourceCreatePageRedirect('index', ['_ts' => now()->timestamp])
             ->resourceEditPageRedirect('index', ['_ts' => now()->timestamp])
             ->globalSearch(false)

@@ -5,4 +5,4 @@ Disallow: /dashboard/
 Disallow: /search/
 
 
-Sitemap: main_url/sitemap.xml
+Sitemap: https://pussy888my.net/sitemap.xml

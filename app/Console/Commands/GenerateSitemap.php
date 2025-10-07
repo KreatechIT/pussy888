@@ -20,30 +20,30 @@ class GenerateSitemap extends Command
         $sitemap = Sitemap::create();
 
         $pages = [
-            route('home', ['lang' => 'en']),
-            route('faq', ['lang' => 'en']),
-            route('about-us', ['lang' => 'en']),
-            route('download', ['lang' => 'en']),
-            route('game-guides', ['lang' => 'en']),
-            route('how-to-play', ['lang' => 'en']),
-            route('terms-and-conditions', ['lang' => 'en']),
-            route('responsible-gaming', ['lang' => 'en']),
-            route('privacy-policy', ['lang' => 'en']),
-            route('contact-us', ['lang' => 'en']),
-            route('promotions', ['lang' => 'en']),
-            route('payments', ['lang' => 'en']),
-            route('game', ['lang' => 'en']),
-            route('slot', ['lang' => 'en']),
-            route('live-casino', ['lang' => 'en']),
-            route('table-games', ['lang' => 'en']),
-            route('jackpot', ['lang' => 'en']),
-            route('blog', ['lang' => 'en']),
+            route('home'),
+            route('faq'),
+            route('about-us'),
+            route('download'),
+            route('game-guides'),
+            route('how-to-play'),
+            route('terms-and-conditions'),
+            route('responsible-gaming'),
+            route('privacy-policy'),
+            route('contact-us'),
+            route('promotions'),
+            route('payments'),
+            route('game'),
+            route('slot'),
+            route('live-casino'),
+            route('table-games'),
+            route('jackpot'),
+            route('blog'),
         ];
 
         foreach ($pages as $url) {
             $sitemap->add(
                 Url::create($url)
-                    ->setPriority($url === route('home', ['lang' => 'en']) ? 1.0 : 0.8)
+                    ->setPriority($url === route('home') ? 1.0 : 0.8)
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
             );
         }
@@ -57,7 +57,7 @@ class GenerateSitemap extends Command
             ->chunk(200, function ($blogs) use ($sitemap) {
                 foreach ($blogs as $blog) {
                     $sitemap->add(
-                        Url::create(route('blog.show', ['lang' => 'en', 'slug' => $blog->slug]))
+                        Url::create(route('blog.show', ['slug' => $blog->slug]))
                             ->setLastModificationDate($blog->updated_at ?? $blog->created_at)
                             ->setPriority(0.8)
                             ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -21,13 +21,22 @@
     <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    @php
+        $route = request()->route();
+        $routeName = $route?->getName();
+        $params = $route?->parameters() ?? [];
+        $canonical = $routeName ? route($routeName, $params) : url()->current();
+    @endphp
+
+    <link href="{{ $canonical }}" rel="canonical" />
+
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ url()->current() }}" />
 
     <!-- hreflang Tags -->
-    <link rel="alternate" href="{{ route('home', ['lang' => 'en']) }}" hreflang="en" />
-    <link rel="alternate" href="{{ route('home', ['lang' => 'bm']) }}" hreflang="bm" />
-    <link rel="alternate" href="{{ route('home', ['lang' => 'zh']) }}" hreflang="zh" />
+    <link id="alt-en" rel="alternate" href="{{ route('home') }}" hreflang="en" />
+    <link id="alt-bm" rel="alternate" href="{{ route('home', ['lang' => 'bm']) }}" hreflang="bm" />
+    <link id="alt-zh" rel="alternate" href="{{ route('home', ['lang' => 'zh']) }}" hreflang="zh" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -65,6 +74,8 @@
             mirror: false,
         });
     </script>
+
+    <x-layouts.language-scripts />
 
     <!-- Scripts -->
     @stack('scripts')
