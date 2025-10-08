@@ -1,85 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G10CZEV6T9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-    <!-- Meta Data -->
-    <title>@stack('title', config('app.name'))</title>
-    <meta name="title" content="@stack('meta_title')">
-    <meta name="description" content="@stack('meta_description')">
-    <meta name="keywords" content="@stack('meta_keywords')">
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/frontend/images/logo.png') }}" type="image/x-icon">
+            gtag('config', 'G-G10CZEV6T9');
+        </script>
+        <meta name="google-site-verification" content="vIpZ982sF-9bZbr8f1hVOQ1dJn2q363OqLUkpygd9Mw" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Meta Data -->
+        <title>@stack('title', config('app.name'))</title>
+        <meta name="title" content="@stack('meta_title')">
+        <meta name="description" content="@stack('meta_description')">
+        <meta name="keywords" content="@stack('meta_keywords')">
 
-    <!-- AOS CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Favicon -->
+        <link href="{{ asset('assets/frontend/favicon.ico') }}" rel="icon" />
 
-    @php
-        $route = request()->route();
-        $routeName = $route?->getName();
-        $params = $route?->parameters() ?? [];
-        $canonical = $routeName ? route($routeName, $params) : url()->current();
-    @endphp
+        <!-- Font Awesome CDN -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            rel="stylesheet"
+            integrity="sha512-..."
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <link href="{{ $canonical }}" rel="canonical" />
+        <!-- AOS CDN -->
+        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="{{ url()->current() }}" />
+        @php
+            $route = request()->route();
+            $routeName = $route?->getName();
+            $params = $route?->parameters() ?? [];
+            $canonical = $routeName ? route($routeName, $params) : url()->current();
+        @endphp
 
-    <!-- hreflang Tags -->
-    <link id="alt-en" rel="alternate" href="{{ route('home') }}" hreflang="en" />
-    <link id="alt-bm" rel="alternate" href="{{ route('home', ['lang' => 'bm']) }}" hreflang="bm" />
-    <link id="alt-zh" rel="alternate" href="{{ route('home', ['lang' => 'zh']) }}" hreflang="zh" />
+        <link href="{{ $canonical }}" rel="canonical" />
 
-    <!-- Styles / Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- Canonical Tag -->
+        <link href="{{ url()->current() }}" rel="canonical" />
 
-    <!-- Schema Data -->
-    @stack('schema')
+        <!-- hreflang Tags -->
+        <link
+            id="alt-en"
+            href="{{ route('home') }}"
+            hreflang="en"
+            rel="alternate"
+        />
+        <link
+            id="alt-bm"
+            href="{{ route('home', ['lang' => 'bm']) }}"
+            hreflang="bm"
+            rel="alternate"
+        />
+        <link
+            id="alt-zh"
+            href="{{ route('home', ['lang' => 'zh']) }}"
+            hreflang="zh"
+            rel="alternate"
+        />
 
-    <!-- Styles -->
-    @stack('styles')
+        <!-- Styles / Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-</head>
+        <!-- Schema Data -->
+        @stack('schema')
 
-<body>
+        <!-- Styles -->
+        @stack('styles')
+    </head>
 
-    @if ($slot->isEmpty())
-        <p>
-            Empty $slot
-        </p>
-    @else
-        <div x-data="{ mobileOpen: false, gameMenu: false }" class="min-h-screen bg-black text-white">
-            <x-layouts.header />
-            {{ $slot }}
-            <x-layouts.footer />
+    <body>
+        @if ($slot->isEmpty())
+            <p>
+                Empty $slot
+            </p>
+        @else
+            <div class="min-h-screen bg-black text-white" x-data="{ mobileOpen: false, gameMenu: false }">
+                <x-layouts.header />
+                {{ $slot }}
+                <x-layouts.footer />
 
-        </div>
-    @endif
+            </div>
+        @endif
 
-    <!-- AOS Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            easing: "ease-in-out",
-            once: true,
-            mirror: false,
-        });
-    </script>
+        <!-- AOS Scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                easing: "ease-in-out",
+                once: true,
+                mirror: false,
+            });
+        </script>
 
-    <x-layouts.language-scripts />
+        <x-layouts.language-scripts />
 
-    <!-- Scripts -->
-    @stack('scripts')
-
-</body>
+        <!-- Scripts -->
+        @stack('scripts')
+    </body>
 
 </html>
