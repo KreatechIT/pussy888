@@ -44,9 +44,13 @@ Route::prefix('games')->group(function () {
 });
 Route::get('/blog', BlogLivewire::class)->name('blog');
 Route::get('/blog/{slug}', BlogPreviewLivewire::class)->name('blog.show');
+
 Route::get('/foo', function () {
-    Artisan::call('storage:link');
+    rescue(fn () => Artisan::call('storage:link'), null, report: false);
+
+    return to_route('home');
 });
+
 Route::get('/sitemap.xml', function (SiteMapBuilder $builder) {
     Artisan::call('app:generate-sitemap');
     $path = public_path('sitemap.xml');
